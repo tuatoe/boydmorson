@@ -1745,7 +1745,7 @@ button{
 }
 
 .nav-tab__content__block{
-  border:1px solid #DDD;
+  border:1px solid #0C2074;
   margin-bottom:20px;
   padding:20px;
   position: relative;
@@ -1760,7 +1760,7 @@ button{
 }
 
 .nav-tab__content__block__title{
-  border-bottom:1px solid #ddd;
+  border-bottom:1px solid #0C2074;
   padding-bottom:5px;
   width:81%;
 }
@@ -1771,13 +1771,13 @@ button{
   top: 30%;
   width: 70px;
   text-align: center;
-  border: 1px solid #ddd;
+  border: 1px solid #0C2074;
   padding: 15px;
   color:#222;
 }
 
 .nav-tab__content__block:hover{
-  border:1px solid #0C2074;
+  border:1px solid #999;
 }
 
 .nav-tab__content__block:hover .nav-tab__content__block__date{
@@ -1786,12 +1786,12 @@ button{
 }
 
 .nav-tab__content__block:hover .nav-tab__content__block__title{
-  border-bottom:1px solid #0C2074;
+  border-bottom:1px solid #999;
 }
 
 .nav-tab__link {
   float:left;
-  border:1px solid #ddd;
+  border:1px solid #555;
   list-style: none;
   padding:15px;
   cursor: pointer;

@@ -12,7 +12,7 @@
          }
          
          &__block{
-             border:1px solid #DDD;
+             border:1px solid $darkBlue;
              margin-bottom:20px;
              padding:20px;
              position: relative;
@@ -24,7 +24,7 @@
                  margin:0;
              }
              &__title{
-                 border-bottom:1px solid #ddd;
+                 border-bottom:1px solid $darkBlue;
                  padding-bottom:5px;
                  width:81%;
              }
@@ -34,13 +34,13 @@
                 top: 30%;
                 width: 70px;
                 text-align: center;
-                border: 1px solid #ddd;
+                border: 1px solid $darkBlue;
                 padding: 15px;
                  color:#222;
              }
              
              &:hover{
-                 border:1px solid $darkBlue;
+                 border:1px solid #999;
                  
                  & .nav-tab__content__block__date{
                      background-color:$darkBlue;
@@ -48,7 +48,7 @@
                  }
                  
                  & .nav-tab__content__block__title{
-                     border-bottom:1px solid $darkBlue;
+                     border-bottom:1px solid #999;
                  }
              }
          }
@@ -58,12 +58,12 @@
       
     &__link {
         float:left;
-        border:1px solid #ddd;
+        border:1px solid #555;
         list-style: none;
         padding:15px;
         cursor: pointer;
         text-align: center;
-        
+      
         &--current{
             color:#FFF;
             background-color:$darkBlue;
