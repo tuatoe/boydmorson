@@ -1552,6 +1552,7 @@ button{
   height: 100%;
   overflow-y: auto;
   top:50%;
+  padding-bottom:3em;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
