@@ -1,0 +1,61 @@
+.btn{
+  background-color:$mainBlue;
+  color:#FFF;
+  text-decoration: none;
+  padding: .6em 1.6em ;
+  display: inline-block;
+ cursor: pointer;
+    font-weight: 200;
+    font-size: .85rem;
+
+    &--light-blue{
+        background-color:$mainLightBlue;
+        border-radius: 0;
+        border-radius: 15px;;
+      &:hover{
+          background-color:$mainGreen;
+          color:#FFF;
+         
+          
+      }
+    } 
+    
+    &--dark-blue{
+        background-color:$darkBlue;
+        border-radius: 0;
+        border-radius: 15px;;
+      &:hover{
+          background-color:$mainLightBlue;
+          color:#FFF;
+         
+          
+      } 
+    }    
+  &--orange{
+    background:$mainOrange;
+       &:hover{
+          background-color:$mainGreen;
+           
+      }
+    }
+
+  &--green{
+      background-color:$mainGreen;
+      &:hover{
+          background-color:$mainOrange;
+      }
+  }
+      
+  &--large{
+    padding: 1.1rem 1.9rem;
+      color:#FFF;
+    @mixin atSmall{
+        font-size:1.25rem;
+    }
+  }
+    
+    &--position-absolute{
+        position: absolute;
+        top:10px;
+    }
+}

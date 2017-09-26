@@ -1,0 +1,90 @@
+ .nav-tab {
+      margin:0;
+     padding:0;
+     &__content{
+        display: none;
+        animation: fadeEffect 2s;
+        min-height:31.25rem;
+        margin-top:2em;
+         &.nav-tab__current-tab{
+            animation: fadeEffect 2s;
+            display: block;
+         }
+         
+         &__block{
+             border:1px solid #DDD;
+             margin-bottom:20px;
+             padding:20px;
+             position: relative;
+             p{
+                 color:#555;
+                 font-size:.85rem;
+                 text-align: left;
+                 line-height: 1.625;
+                 margin:0;
+             }
+             &__title{
+                 border-bottom:1px solid #ddd;
+                 padding-bottom:5px;
+                 width:81%;
+             }
+             &__date{
+                position: absolute;
+                right: 10px;
+                top: 30%;
+                width: 70px;
+                text-align: center;
+                border: 1px solid #ddd;
+                padding: 15px;
+                 color:#222;
+             }
+             
+             &:hover{
+                 border:1px solid $darkBlue;
+                 
+                 & .nav-tab__content__block__date{
+                     background-color:$darkBlue;
+                     color:#FFF;
+                 }
+                 
+                 & .nav-tab__content__block__title{
+                     border-bottom:1px solid $darkBlue;
+                 }
+             }
+         }
+     }
+     
+     
+      
+    &__link {
+        float:left;
+        border:1px solid #ddd;
+        list-style: none;
+        padding:15px;
+        cursor: pointer;
+        text-align: center;
+        
+        &--current{
+            color:#FFF;
+            background-color:$darkBlue;
+        }
+        
+        
+        
+        &:hover{
+            background-color:$darkBlue;
+             color:#FFF;
+        }
+    }
+     
+     &:after{
+            content: "";
+              display: table;
+              clear: both;
+            }
+        }
+
+ @keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }

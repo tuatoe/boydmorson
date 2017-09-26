@@ -1,0 +1,28 @@
+.fa{
+    color:#FFF;
+    font-size:3rem;
+    position: absolute;
+    margin-top:17%;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+    &--green{
+        color:$mainGreen;
+    }
+    &--orange{
+        color:$mainOrange;
+    }
+    
+    &.fa-question{
+        background-color: #FFF;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: .75rem;
+        color: $mainGreen;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-right: 1rem;
+        
+    }
+}
+

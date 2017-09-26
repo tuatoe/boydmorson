@@ -1,0 +1,111 @@
+.primary-nav{
+
+  padding-top:1.25rem;
+  position: relative;
+  @mixin atMedium{
+    padding-top:0;
+  }
+
+  &--pull-right{
+    @mixin atMedium{
+      float:right;
+    }
+  }
+
+  ul {
+    margin:0;
+    padding:0;
+    @mixin clearfix;
+    transition: all .3s ease-out;
+    position: relative;
+    z-index: 0;
+    li {
+        list-style: none;
+        display: inline-block;
+        padding-right:.4375rem;
+
+        a{
+            color:#FFF;
+            background-color:$darkBlue;
+            padding:5px 10px;
+            border-radius: 20px;
+            &:hover{
+                background-color: #FFF;
+                color:$darkBlue;
+            }
+        }
+        @mixin atMedium {
+        display: inline-block;
+        position: relative;
+            z-index: 1;
+            a {
+                cursor: pointer;
+                padding:1.5rem .6rem;
+                margin-right:1rem;
+                font-size: .875rem;
+                color:$darkBlue;
+                text-decoration: none;
+                display: block;
+                font-weight: 500;
+
+                &:hover {
+                    color:$mainLightBlue;
+                    /*background-color:$mainLightBlue;*/
+                }
+                
+                 @mixin atMedium {
+                    font-size:.95rem;
+                    background-color: transparent;
+
+                    &.is-current-link {
+                    color:$mainLightBlue;
+
+                    }
+                }
+                
+            }
+            
+            ul {
+                display: none;
+                background-color:#FFF; 
+
+            }
+        }
+        
+        &:hover ul {
+                display: block;
+                width: 10.3125rem;
+                text-align: left;
+                padding: .625rem;
+                position: absolute;
+                z-index: 9;
+                left:0;
+                top:1.875rem;
+                background-color: #FFF;
+             
+                li {
+                    color:#555;
+                    padding:.625rem;
+                    cursor: pointer;
+                
+                a {
+                    cursor: pointer;
+                }
+                
+                &:hover {
+                    color:#FFF;
+                    background-color:$mainLightBlue; 
+                }
+            }
+        }
+    }
+
+    li:last-child {
+        padding-right:0;
+        @mixin atMedium {
+            padding-right: 1.25rem;
+        }
+    }
+}
+ 
+}
