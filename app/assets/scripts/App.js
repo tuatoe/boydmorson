@@ -14,5 +14,7 @@ var stickyHeader = new StickyHeader();
 
 var modal = new Modal();
 
+var tabContent = new TabContent;
+
 //var slideShow = new SlideShow();
 

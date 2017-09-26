@@ -1,5 +1,3 @@
-
-
 import $ from 'jquery';
 
  class Modal{
@@ -30,6 +28,7 @@ import $ from 'jquery';
     openModal(){
         var currentModal = $(this);
         var matchingModal = currentModal.attr('data-matching-modal');
+        //this.modal.addClass('modal--is-visible');
         $('#' + matchingModal).addClass('modal--is-visible');
         return false;
     }

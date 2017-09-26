@@ -7,19 +7,19 @@ class TabContent{
     
     events(){
        
-        $('ul.how-you-can-help__nav-tabs li').on('click',this.showActiveTab);
+        $('.nav-tab div').on('click',this.showActiveTab);
     }
     
     showActiveTab(){
         var $that = $(this);
         var tab_id = $that.attr('data-tab');
         
-        $('ul.how-you-can-help__nav-tabs li').removeClass('how-you-can-help__nav-tabs__link--current');
-        $('.how-you-can-help__tab-content').removeClass('how-you-can-help__nav-tabs--current-tab');
+        $('.nav-tab div').removeClass('nav-tab__link--current');
+        $('.nav-tab__content').removeClass('nav-tab__current-tab');
             
-        $that.addClass('how-you-can-help__nav-tabs__link--current');
-        $('#'+tab_id).addClass('how-you-can-help__nav-tabs--current-tab');
+        $that.addClass('nav-tab__link--current');
+        $('#'+tab_id).addClass('nav-tab__current-tab');
     }
 }
 
-/*export default TabContent;*/
+export default TabContent;

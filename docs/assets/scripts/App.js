@@ -82,6 +82,8 @@
 
 	var modal = new _Modal2.default();
 
+	var tabContent = new _TabContent2.default();
+
 	//var slideShow = new SlideShow();
 
 /***/ },
@@ -11284,6 +11286,7 @@
 	    value: function openModal() {
 	      var currentModal = (0, _jquery2.default)(this);
 	      var matchingModal = currentModal.attr('data-matching-modal');
+	      //this.modal.addClass('modal--is-visible');
 	      (0, _jquery2.default)('#' + matchingModal).addClass('modal--is-visible');
 	      return false;
 	    }
@@ -11304,6 +11307,10 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -11326,7 +11333,7 @@
 	        key: 'events',
 	        value: function events() {
 
-	            (0, _jquery2.default)('ul.how-you-can-help__nav-tabs li').on('click', this.showActiveTab);
+	            (0, _jquery2.default)('.nav-tab div').on('click', this.showActiveTab);
 	        }
 	    }, {
 	        key: 'showActiveTab',
@@ -11334,18 +11341,18 @@
 	            var $that = (0, _jquery2.default)(this);
 	            var tab_id = $that.attr('data-tab');
 
-	            (0, _jquery2.default)('ul.how-you-can-help__nav-tabs li').removeClass('how-you-can-help__nav-tabs__link--current');
-	            (0, _jquery2.default)('.how-you-can-help__tab-content').removeClass('how-you-can-help__nav-tabs--current-tab');
+	            (0, _jquery2.default)('.nav-tab div').removeClass('nav-tab__link--current');
+	            (0, _jquery2.default)('.nav-tab__content').removeClass('nav-tab__current-tab');
 
-	            $that.addClass('how-you-can-help__nav-tabs__link--current');
-	            (0, _jquery2.default)('#' + tab_id).addClass('how-you-can-help__nav-tabs--current-tab');
+	            $that.addClass('nav-tab__link--current');
+	            (0, _jquery2.default)('#' + tab_id).addClass('nav-tab__current-tab');
 	        }
 	    }]);
 
 	    return TabContent;
 	}();
 
-	/*export default TabContent;*/
+	exports.default = TabContent;
 
 /***/ }
 /******/ ]);

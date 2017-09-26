@@ -41,5 +41,14 @@ button{
     color:#FFF;
 }
 
+.read-more{
+    cursor: pointer;
+    color: $lightGray;
+    &:hover{
+        color:#FFF;
+        font-weight: 300;
+    }
+}
+
 
 
