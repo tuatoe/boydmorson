@@ -37,14 +37,16 @@
       
     @mixin atMedium{
         padding:15px 12px 5px 12px;
-
+        
       left:auto;
       transform: translateX(0);
         
       .site-header--dark & {
         transform: scale(.57);
+         
       }
     }
+      
   }
   &__logo__graphic{
     text-indent: -9999px;

@@ -12,7 +12,7 @@
          }
          
          &__block{
-             border:1px solid $darkBlue;
+             border:1px solid #ccc;
              margin-bottom:20px;
              padding:20px;
              position: relative;
@@ -24,9 +24,12 @@
                  margin:0;
              }
              &__title{
-                 border-bottom:1px solid $darkBlue;
+                 border-bottom:1px solid #CCC;
                  padding-bottom:5px;
-                 width:81%;
+                 width:71%;
+                 @mixin atMedium{
+                    width:81%; 
+                 }
              }
              &__date{
                 position: absolute;
@@ -34,13 +37,13 @@
                 top: 30%;
                 width: 70px;
                 text-align: center;
-                border: 1px solid $darkBlue;
+                border: 1px solid #ccc;
                 padding: 15px;
                  color:#222;
              }
              
              &:hover{
-                 border:1px solid #999;
+                 border:1px solid $darkBlue;
                  
                  & .nav-tab__content__block__date{
                      background-color:$darkBlue;
@@ -48,7 +51,7 @@
                  }
                  
                  & .nav-tab__content__block__title{
-                     border-bottom:1px solid #999;
+                     border-bottom:1px solid $darkBlue;
                  }
              }
          }
@@ -58,12 +61,12 @@
       
     &__link {
         float:left;
-        border:1px solid #555;
+        border:1px solid #ccc;
         list-style: none;
-        padding:15px;
+        padding:10px;
         cursor: pointer;
         text-align: center;
-      
+        font-size:.97rem;
         &--current{
             color:#FFF;
             background-color:$darkBlue;
@@ -74,6 +77,15 @@
         &:hover{
             background-color:$darkBlue;
              color:#FFF;
+        }
+        
+        @mixin atSmall{
+            padding:15px;
+            font-size:1.2rem;
+        }
+        @mixin atMedium{
+            padding:15px;
+            font-size:1rem;
         }
     }
      
