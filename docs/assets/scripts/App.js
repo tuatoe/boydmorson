@@ -76,7 +76,10 @@
 
 	var mobileMenu = new _MobileMenu2.default();
 
-	new _RevealOnScroll2.default((0, _jquery2.default)('.reveal-project'), "70%");
+	new _RevealOnScroll2.default((0, _jquery2.default)('.reveal-team'), "70%");
+	new _RevealOnScroll2.default((0, _jquery2.default)('.reveal-contact'), "70%");
+	new _RevealOnScroll2.default((0, _jquery2.default)('.reveal-about'), "70%");
+	new _RevealOnScroll2.default((0, _jquery2.default)('.reveal-events'), "70%");
 
 	var stickyHeader = new _StickyHeader2.default();
 

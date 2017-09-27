@@ -8,7 +8,10 @@ import TabContent from "./modules/TabContent";
 
 var mobileMenu = new MobileMenu();
 
-new RevealOnScroll($('.reveal-project'), "70%");
+new RevealOnScroll($('.reveal-team'), "70%");
+new RevealOnScroll($('.reveal-contact'), "70%");
+new RevealOnScroll($('.reveal-about'), "70%");
+new RevealOnScroll($('.reveal-events'), "70%");
 
 var stickyHeader = new StickyHeader();
 
