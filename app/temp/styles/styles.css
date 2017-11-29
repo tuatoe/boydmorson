@@ -513,7 +513,11 @@ button{
 
 .read-more:hover{
   color:#FFF;
-  font-weight: 300;
+}
+
+p a{
+  color:#FFF;
+  font-weight: bold;
 }
 
 .large-hero{
@@ -939,12 +943,20 @@ button{
   margin-right:-45px;
 }
 
+.row--gutters-super-small{
+  margin-right:-15px;
+}
+
 .row--gutters > div{
   padding-right:65px;
 }
 
 .row--gutters-large > div{
   padding-right:100px;
+}
+
+.row--gutters-super-small > div{
+  padding-right:15px;
 }
 
 .row--gutters-small > div{
@@ -955,15 +967,67 @@ button{
   margin-bottom:1rem;
 }
 
+@media(min-width:530px) {
+
+  .row__b-margin-until-small {
+    margin-bottom: 0;
+  }
+
+  .row__small-2 {
+    width: 16.66%;
+    float: left;
+  }
+
+  .row__small-3 {
+    width: 25%;
+    float: left;
+  }
+
+  .row__small-4 {
+    width: 33.33%;
+    float: left;
+  }
+
+  .row__small-6 {
+    width: 50%;
+    float: left;
+  }
+
+  .row__small-7 {
+    width: 58.33%;
+    float: left;
+  }
+
+  .row__small-8 {
+    width: 66.66%;
+    float: left;
+  }
+
+  .row__small-9 {
+    width: 75%;
+    float: left;
+  }
+
+  .row__small-10 {
+    width: 83.33%;
+    float: left;
+  }
+
+  .row__small-11 {
+    width: 91.66%;
+    float: left;
+  }
+
+  .row__small-12 {
+    width: 100%;
+    float: left;
+  }
+}
+
 @media(min-width:800px) {
 
   .row__b-margin-until-medium {
     margin-bottom: 0;
-  }
-
-  .row__medium-4 {
-    width: 08.33%;
-    float: left;
   }
 
   .row__medium-2 {
@@ -1023,7 +1087,7 @@ button{
     margin-bottom: 0;
   }
 
-  .row__large-4 {
+  .row__large-1 {
     width: 08.33%;
     float: left;
   }
@@ -1080,6 +1144,22 @@ button{
 }
 
 /*begin equal height rules*/
+
+@media(min-width:530px) {
+
+  .flexbox .row--equal-height-at-small {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.flexbox .row--equal-height-at-small > div{
+  float:none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
 @media(min-width:800px) {
 
@@ -1319,8 +1399,8 @@ button{
   }
 
   .site-header--dark .site-header__logo {
-    -webkit-transform: scale(.51);
-            transform: scale(.51);
+    -webkit-transform: scale(.58);
+            transform: scale(.58);
   }
 }
 

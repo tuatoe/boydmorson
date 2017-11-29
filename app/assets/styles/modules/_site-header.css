@@ -89,7 +89,7 @@
         transform: translateX(0);
         
       .site-header--dark & {
-        transform: scale(.51);
+        transform: scale(.58);
       }
     }
   }

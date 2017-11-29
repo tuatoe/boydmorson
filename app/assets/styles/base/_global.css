@@ -47,7 +47,13 @@ button{
     color: $lightGray;
     &:hover{
         color:#FFF;
-        font-weight: 300;
+    }
+}
+
+p {
+    a{
+        color:#FFF;
+        font-weight: bold;
     }
 }
 
