@@ -62,8 +62,9 @@
             list-style: none;
             display: inline-block;
             padding-right:.4375rem;
-
+            margin-bottom:20px;
             @mixin atMedium {
+                margin-bottom:0;
                 z-index: 1;
 
                 ul {
