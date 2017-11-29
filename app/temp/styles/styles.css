@@ -724,7 +724,7 @@ button{
   padding-right:0;
 }
 
-@media(min-width:1010px) {
+@media(min-width:1200px) {
 
   .wrapper--no-padding-until-large {
     padding-left: 18px;
@@ -774,7 +774,7 @@ button{
   padding-bottom:0;
 }
 
-@media(min-width:1010px) {
+@media(min-width:1200px) {
 
   .page-section--no-b-padding-until-large {
     padding-bottom: 4.5rem;
@@ -1010,7 +1010,7 @@ button{
   }
 }
 
-@media(min-width:1010px) {
+@media(min-width:1200px) {
 
   .row__b-margin-until-large {
     margin-bottom: 0;
@@ -1090,7 +1090,7 @@ button{
   display: flex;
 }
 
-@media(min-width:1010px) {
+@media(min-width:1200px) {
 
   .flexbox .row--equal-height-at-large {
     display: -webkit-box;
@@ -1199,6 +1199,43 @@ button{
   }
 }
 
+.site-top-header{
+    color:#FFF;
+}
+
+.site-top-header background-color:transparent
+    @mixin atMedium{
+  background-color:#0C2074;
+}
+
+.site-top-header ul{
+  list-style: none;
+  color:#FFF;
+  margin:0;
+  padding:5px 0 22px 0;
+  font-size:.95rem;
+  text-align: center;
+}
+
+@media(min-width:800px) {
+
+  .site-top-header ul {
+    margin-top: 40px;
+  }
+}
+
+.site-top-header ul li{
+  float:left;
+  margin-right:20px;
+  font-weight: 100;
+}
+
+@media(min-width:800px) {}
+
+.site-top-header ul li:last-child{
+  margin-right:0;
+}
+
 .site-header{
   position: absolute;
   z-index: 2;
@@ -1250,14 +1287,15 @@ button{
 
   .site-header__logo {
     padding: 15px 12px 5px 12px;
+    margin-top: 34px !important;
     left: auto;
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
 
   .site-header--dark .site-header__logo {
-    -webkit-transform: scale(.57);
-            transform: scale(.57);
+    -webkit-transform: scale(.51);
+            transform: scale(.51);
   }
 }
 
@@ -1858,14 +1896,14 @@ button{
 }
 
 .our-team{
-   background-color:rgba(255,255,255,.8); 
+   /*background-color:rgba(255,255,255,.8);*/
    padding:0 15px 35px 15px;
    margin-bottom:98px;
     position: relative;
     text-align: center;
 }
 
-@media(min-width:1010px) {
+@media(min-width:1200px) {
 
   .our-team {
     padding: 0 1.8125rem 20px 1.8125rem;
