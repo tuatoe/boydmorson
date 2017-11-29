@@ -13,6 +13,7 @@ img
     margin-top:0;
     font-style: italic;
     font-weight: 200;
+    
     &--white-text{
         color:#FFF;
     }

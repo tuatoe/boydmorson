@@ -1,9 +1,10 @@
 .generic-content-container{
   p {
     font-weight: 300;
-    line-height: 1.65;
+    line-height: 1.75;
     margin:0 0 1.8rem 0;
     text-align: center;
+      color:#888;
    
   }
     

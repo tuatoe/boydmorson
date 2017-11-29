@@ -20,7 +20,10 @@
     background-color:rgba($mainGray,.65);
         &__text-content {
             position: absolute;
-            top: 50%;
+            top: 65%;
+            @mixin atMedium{
+                top:45%;
+            }
             transform: translateY(-50%);
             left: 0;
             width: 100%;
