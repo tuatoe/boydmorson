@@ -10862,7 +10862,7 @@
 	          element: currentPageSection,
 	          handler: function handler(direction) {
 	            if (direction == 'down') {
-	              var matchingHeaderLink = currentPageSection.getAttribute('data-match-link');
+	              var matchingHeaderLink = currentPageSection.getAttribute('data-matching-link');
 	              that.headerLinks.removeClass('is-current-link');
 	              (0, _jquery2.default)(matchingHeaderLink).addClass('is-current-link');
 	            }
@@ -10874,7 +10874,7 @@
 	          element: currentPageSection,
 	          handler: function handler(direction) {
 	            if (direction == 'up') {
-	              var matchingHeaderLink = currentPageSection.getAttribute('data-match-link');
+	              var matchingHeaderLink = currentPageSection.getAttribute('data-matching-link');
 	              that.headerLinks.removeClass('is-current-link');
 	              (0, _jquery2.default)(matchingHeaderLink).addClass('is-current-link');
 	            }

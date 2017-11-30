@@ -1,8 +1,14 @@
 .large-hero{
   background-image: url('../../assets/images/hero-large-2.jpg');
-  min-height:300px;
+  min-height:250px;
+    @mixin atSmall{
+        min-height: 350px;
+    }
     @mixin atMedium{
-         min-height:800px;
+         min-height:400px;
+    }
+    @mixin atLarge{
+        min-height:800px;
     }
   padding-bottom:30px;
   background-attachment: fixed;
@@ -21,6 +27,8 @@
         &__text-content {
             position: absolute;
             top: 65%;
+            top:50%;
+           
             @mixin atMedium{
                 top:45%;
             }

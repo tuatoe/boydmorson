@@ -1,4 +1,4 @@
-.row{
+.row {
 
 @mixin clearfix;
 
@@ -168,7 +168,7 @@
         margin-bottom:0;
     }
       
-    &__large-1 {
+    &__large-4 {
         width:08.33%;
         float:left;
     }

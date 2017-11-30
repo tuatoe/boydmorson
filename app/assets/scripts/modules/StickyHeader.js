@@ -47,7 +47,7 @@ class StickyHeader {
             element:currentPageSection,
             handler:function(direction){
               if(direction == 'down'){
-                var matchingHeaderLink = currentPageSection.getAttribute('data-match-link');
+                var matchingHeaderLink = currentPageSection.getAttribute('data-matching-link');
                 that.headerLinks.removeClass('is-current-link')
                 $(matchingHeaderLink).addClass('is-current-link');
               }
@@ -60,7 +60,7 @@ class StickyHeader {
             element:currentPageSection,
             handler:function(direction){
               if(direction == 'up'){
-                var matchingHeaderLink = currentPageSection.getAttribute('data-match-link');
+                var matchingHeaderLink = currentPageSection.getAttribute('data-matching-link');
                 that.headerLinks.removeClass('is-current-link')
                 $(matchingHeaderLink).addClass('is-current-link');
               }

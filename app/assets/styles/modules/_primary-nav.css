@@ -2,12 +2,12 @@
 
   padding-top:1.25rem;
   position: relative;
-  @mixin atMedium{
+  @mixin atLarge{
     padding-top:0;
   }
 
   &--pull-right{
-    @mixin atMedium{
+    @mixin atLarge{
       float:right;
     }
   }
@@ -22,7 +22,7 @@
                 color:$darkBlue;
             }
             
-            @mixin atMedium{
+            @mixin atLarge{
                 cursor: pointer;
                 padding:1.5rem .6rem;
                 margin-right:1rem;
@@ -36,7 +36,7 @@
                     color:$mainLightBlue;
                 }
                 
-                 @mixin atMedium {
+                 @mixin atLarge {
                     font-size:.95rem;
                     background-color: transparent;
                      
@@ -63,7 +63,7 @@
             display: inline-block;
             padding-right:.4375rem;
             margin-bottom:20px;
-            @mixin atMedium {
+            @mixin atLarge {
                 margin-bottom:0;
                 z-index: 1;
 
@@ -104,7 +104,7 @@
 
         li:last-child {
             padding-right:0;
-            @mixin atMedium {
+            @mixin atLarge {
                 padding-right: 1.25rem;
             }
         }

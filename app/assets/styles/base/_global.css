@@ -58,4 +58,34 @@ p {
 }
 
 
+.phone{
+        position: relative;
+        &:before{
+                content: "\f095";
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+             margin-right:10px;
+             font-size:1.2rem;
+        }
+    }
+    
+    .email{
+        position: relative;
+          &:before{
+                  content: "\f003";
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+              margin-right:10px;
+              font-size:1.2rem;
+        }
+    }
+
 
