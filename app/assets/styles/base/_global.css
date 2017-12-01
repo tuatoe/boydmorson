@@ -24,6 +24,10 @@ img
 a {
   color:#555;
   text-decoration: none;
+    
+    &:hover{
+        color:$darkBlue;
+    }
 }
 
 h4{
@@ -46,7 +50,7 @@ button{
     cursor: pointer;
     color: $lightGray;
     &:hover{
-        color:#FFF;
+        color:$darkBlue;
     }
 }
 

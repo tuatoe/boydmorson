@@ -4,7 +4,7 @@
     line-height: 1.75;
     margin:0 0 1.8rem 0;
     text-align: center;
-      color:#888;
+      color:#333;
    
   }
     
@@ -25,5 +25,11 @@
   p a{
     font-weight:700;
   }
+    
+    a{
+        &:hover{
+            color:$darkBlue;
+        }
+    }
 
 }

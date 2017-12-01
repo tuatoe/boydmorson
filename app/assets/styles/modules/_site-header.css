@@ -189,15 +189,17 @@
       opacity: 1;
       z-index: 1;
       transform: scale(1);
-      padding-bottom:32px;
-            
+      padding-bottom:18px;
+        margin-top:15px;
         @mixin atSmall{
-             padding-bottom:170px;
+             margin-top:40px;
+             padding-bottom:131px;
         }
         @mixin atMedium{
-            padding-bottom:220px;
+            padding-bottom:180px;
         }
         @mixin atLarge{
+            margin-top:0;
             padding-bottom:0;
         }
     }

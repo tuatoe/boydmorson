@@ -4,7 +4,7 @@
      &__content{
         display: none;
         animation: fadeEffect 2s;
-        min-height:31.25rem;
+        min-height:10rem;
         margin-top:2em;
          &.nav-tab__current-tab{
             animation: fadeEffect 2s;
