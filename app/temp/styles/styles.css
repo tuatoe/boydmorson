@@ -501,6 +501,11 @@ h4{
     margin-top:.5em;
 }
 
+hr{
+    border:1px dotted #FFF;
+    line-height: 1.625;
+}
+
 button{
     border:0;
     border-radius: 5px;
@@ -541,8 +546,8 @@ p a{
 }
 
 .email{
-        position: relative;
-    }
+    position: relative;
+}
 
 .email:before{
   content: "\f003";
@@ -554,6 +559,16 @@ p a{
   -moz-osx-font-smoothing: grayscale;
   margin-right:10px;
   font-size:1.2rem;
+}
+
+ul{
+    margin:0;
+    padding:0;
+}
+
+li{
+    margin:0;
+    padding:0;
 }
 
 .large-hero{
@@ -692,12 +707,13 @@ p a{
   padding: .6em 1.6em ;
   display: inline-block;
  cursor: pointer;
+    border-radius: 4px;
     font-weight: 200;
     font-size: .85rem;
 }
 
 .btn--light-blue{
-  background-color:#1CC3C9;
+  background-color:#5998a1;
   border-radius: 0;
   border-radius: 15px;
 }
@@ -709,12 +725,10 @@ p a{
 
 .btn--dark-blue{
   background-color:#0C2074;
-  border-radius: 0;
-  border-radius: 15px;
 }
 
 .btn--dark-blue:hover{
-  background-color:#1CC3C9;
+  background-color:#5998a1;
   color:#FFF;
 }
 
@@ -843,6 +857,10 @@ p a{
   }
 }
 
+.page-section--light-blue{
+  background-color:#5998a1;
+}
+
 .page-section--blue{
   background-color:#123241;
   color:#FFF;
@@ -850,6 +868,10 @@ p a{
 
 .page-section--gray{
   background-color:#eee;
+}
+
+.page-section--medium-gray{
+  background-color:#888888;
 }
 
 .page-section--dark-blue{
@@ -874,6 +896,8 @@ p a{
   margin-bottom:.4em;
   font-size:3.5rem;
   font-weight: 300;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .page-section__title--green-text{
@@ -1412,7 +1436,7 @@ p a{
 @media(min-width:1200px) {
 
   .site-header {
-    box-shadow: 0 1px 1px #888888;
+    box-shadow: 0 2px 1px rgba(0,0,0,.5);
     position: fixed;
     background-color: rgba(255,255,255,1);
   }
@@ -1650,7 +1674,7 @@ p a{
   }
 
   .primary-nav a:hover {
-    color: #1CC3C9;
+    color: #5998a1;
   }
 
   @media(min-width:1200px) {
@@ -1661,7 +1685,7 @@ p a{
     }
 
     .primary-nav a.is-current-link {
-      color: #1CC3C9;
+      color: #5998a1;
     }
   }
 }
@@ -1724,7 +1748,7 @@ p a{
 
 .primary-nav ul li:hover ul li:hover {
   color:#FFF;
-  background-color:#1CC3C9;
+  background-color:#5998a1;
 }
 
 .primary-nav ul li:last-child {
@@ -1894,8 +1918,52 @@ p a{
     color:#FFF;
     font-weight: 100;
     font-size:.85rem;
-    background-color:#3C3D41; ;
-    padding:15px 0
+    padding:30px 0;
+}
+
+.footer .address{
+  padding-top:15px;
+}
+
+.footer a {
+  color:#FFF;
+}
+
+.footer a:hover{
+  color:#5998a1;
+  text-decoration: underline;
+}
+
+.footer__links li {
+  list-style: none;
+  float:left;
+  margin-right:30px;
+}
+
+.footer__links li ul{
+  margin-top:10px;
+}
+
+.footer__links li ul li{
+  float:none;
+  text-align: left;
+  margin-bottom:10px;
+}
+
+.footer__links:after {
+  content:'';
+  display: table;
+  clear: both;
+}
+
+.footer__links__title {
+  font-size:1rem;
+  font-weight: bold;
+  line-height: 1.625;
+  margin:0 0 3px 0;
+  padding:0;
+  text-align: left;
+  border-bottom:1px dotted #FFF;
 }
 
 .social-icons{
@@ -2129,7 +2197,7 @@ p a{
 }
 
 .our-team__name{
-  color:#404d61;
+  color:#FFF;
   text-align: center;
   font-size:1rem;
   font-weight: bold;
@@ -2137,7 +2205,7 @@ p a{
 }
 
 .our-team__position{
-  color: #404d61;
+  color: #FFF;
   text-align: center;
   font-weight: 400;
   font-size: 1rem;
@@ -2167,10 +2235,14 @@ p a{
 }
 
 .our-team__learn-more:hover{
-  background-color: #1CC3C9;
+  background-color: #5998a1;
 }
 
 .our-team p{
   padding-bottom:10px;
   text-align: left;
+}
+
+.about{
+    
 }

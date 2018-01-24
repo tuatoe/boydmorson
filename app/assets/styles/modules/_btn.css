@@ -5,6 +5,7 @@
   padding: .6em 1.6em ;
   display: inline-block;
  cursor: pointer;
+    border-radius: 4px;
     font-weight: 200;
     font-size: .85rem;
 
@@ -22,8 +23,6 @@
     
     &--dark-blue{
         background-color:$darkBlue;
-        border-radius: 0;
-        border-radius: 15px;;
       &:hover{
           background-color:$mainLightBlue;
           color:#FFF;
