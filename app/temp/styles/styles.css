@@ -2181,6 +2181,7 @@ li{
 
 .nav-tab2__content__block ul li{
   margin-bottom:10px;
+  line-height: 1.625;
 }
 
 .nav-tab2__content__block ul li p{
@@ -2188,7 +2189,6 @@ li{
 }
 
 .nav-tab2__link {
-  float:left;
   background-color:#eaeae4;
   border-right:4px solid #FFF;
   color:#0f2472;
@@ -2197,6 +2197,7 @@ li{
   cursor: pointer;
   text-align: center;
   font-size:.97rem;
+  margin-bottom:15px;
 }
 
 .nav-tab2__link--current{
@@ -2208,35 +2209,55 @@ li{
 .nav-tab2__link--current:before {
   content:"\f0d7";
   position: absolute;
-  bottom:-45px;
+  bottom:-20px;
   left:50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   color:#0f2472;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size:5rem;
+  font-size:2rem;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media(min-width:530px) {
+
+  .nav-tab2__link--current:before {
+    content: "\f0d7";
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    color: #0f2472;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 5rem;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
 .nav-tab2__link:hover {
   background-color:#0f2472;
   color:#FFF;
+  position: relative;
 }
 
 .nav-tab2__link:hover:before {
   content:"\f0d7";
   position: absolute;
-  bottom:-45px;
+  bottom:-20px;
   left:50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   color:#0f2472;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size:5rem;
+  font-size:2rem;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2245,8 +2266,30 @@ li{
 @media(min-width:530px) {
 
   .nav-tab2__link {
-    padding: 15px;
-    font-size: 1.2rem;
+    margin-bottom: 0;
+    float: left;
+  }
+
+  .nav-tab2__link:hover {
+    background-color: #0f2472;
+    color: #FFF;
+    position: relative;
+  }
+
+  .nav-tab2__link:hover:before {
+    content: "\f0d7";
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    color: #0f2472;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 5rem;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 

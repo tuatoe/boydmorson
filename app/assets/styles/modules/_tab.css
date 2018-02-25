@@ -151,6 +151,7 @@
                 padding:0;
                  li{
                      margin-bottom:10px;
+                     line-height: 1.625;
                      p{
                          font-weight: 300;
                      }
@@ -162,7 +163,6 @@
      
       
     &__link {
-        float:left;
         background-color:$super-light-gray;
         border-right:4px solid #FFF;
         color:$main-blue;
@@ -171,55 +171,100 @@
         cursor: pointer;
         text-align: center;
         font-size:.97rem;
+        margin-bottom:15px;
         &--current{
-            color:#FFF;
-            background-color:$main-blue;
-            position: relative;
-            &:before {
+                color:#FFF;
+                background-color:$main-blue;
+                position: relative;
+                 &:before {
                 content:"\f0d7";
                 position: absolute;
-                bottom:-45px;
+                bottom:-20px;
                 left:50%;
                 transform: translateX(-50%);
                 color:$main-blue;
                 display: inline-block;
                 font: normal normal normal 14px/1 FontAwesome;
-                 font-size:5rem;
+                 font-size:2rem;
                 text-rendering: auto;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
             }
-        }
+                @mixin atSmall{
+                     &:before {
+                        content:"\f0d7";
+                        position: absolute;
+                        bottom:-45px;
+                        left:50%;
+                        transform: translateX(-50%);
+                        color:$main-blue;
+                        display: inline-block;
+                        font: normal normal normal 14px/1 FontAwesome;
+                        font-size:5rem;
+                        text-rendering: auto;
+                        -webkit-font-smoothing: antialiased;
+                        -moz-osx-font-smoothing: grayscale;
+                    }
+                   
+                }
+            
+            
+            }
         
-        
-        
-        &:hover {
-            background-color:$main-blue;
-            color:#FFF;
-            &:before {
+          &:hover {
+             background-color:$main-blue;
+             color:#FFF;
+             position: relative;
+             &:before {
                 content:"\f0d7";
                 position: absolute;
-                bottom:-45px;
+                bottom:-20px;
                 left:50%;
                 transform: translateX(-50%);
                 color:$main-blue;
                 display: inline-block;
                 font: normal normal normal 14px/1 FontAwesome;
-                 font-size:5rem;
+                 font-size:2rem;
                 text-rendering: auto;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
             }
         }
+
         
         @mixin atSmall{
-            padding:15px;
-            font-size:1.2rem;
+            margin-bottom:0;
+            float: left;
+            
+              &:hover {
+             background-color:$main-blue;
+             color:#FFF;
+             position: relative;
+             &:before {
+                content:"\f0d7";
+                position: absolute;
+                bottom:-45px;
+                left:50%;
+                transform: translateX(-50%);
+                color:$main-blue;
+                display: inline-block;
+                font: normal normal normal 14px/1 FontAwesome;
+                 font-size:5rem;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
         }
-        @mixin atMedium{
+            
+        }
+       
+      
+        @mixin atMedium {
             padding:15px;
             font-size:1rem;
         }
+        
+      
     }
      
      &:after{
