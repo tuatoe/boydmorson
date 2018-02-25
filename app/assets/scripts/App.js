@@ -13,6 +13,7 @@ new RevealOnScroll($('.reveal-team'), "70%");
 new RevealOnScroll($('.reveal-contact'), "70%");
 new RevealOnScroll($('.reveal-about'), "70%");
 new RevealOnScroll($('.reveal-events'), "70%");
+new RevealOnScroll($('.reveal-program'), "70%");
 
 var stickyHeader = new StickyHeader();
 

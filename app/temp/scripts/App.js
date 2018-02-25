@@ -84,6 +84,7 @@
 	new _RevealOnScroll2.default((0, _jquery2.default)('.reveal-contact'), "70%");
 	new _RevealOnScroll2.default((0, _jquery2.default)('.reveal-about'), "70%");
 	new _RevealOnScroll2.default((0, _jquery2.default)('.reveal-events'), "70%");
+	new _RevealOnScroll2.default((0, _jquery2.default)('.reveal-program'), "70%");
 
 	var stickyHeader = new _StickyHeader2.default();
 

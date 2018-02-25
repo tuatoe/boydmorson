@@ -122,14 +122,14 @@ li{
 
 .fa-chevron-down{
         position: relative;
-    z-index: 20;
+        z-index: 20;
         &:before{
         position: absolute;
         left:50%;
         left:-100px;
-        bottom:-250px;
+        
         transform: translateX(-50%);
-        content: "\f078";
+        content: "";
         display: inline-block;
         font: normal normal normal 14px/1 FontAwesome;
         font-size: inherit;
@@ -137,11 +137,30 @@ li{
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         margin-right: 10px;
-        font-size: 1.2rem;
         color:#FFF;
-        font-size: 4rem;
         &:hover{
                 color:$dark-red !important;
             }
+    }
+    
+    @mixin atSmall {
+        &:before {
+             content: "\f078";
+            bottom:-80px;
+            font-size: 2rem;
+        }
+    }
+     @mixin atMedium{
+        &:before{
+           bottom:-80px;
+            font-size: 3rem;
+        }
+    }
+    
+    @mixin atLarge{
+        &:before{
+           bottom:-250px;
+            font-size: 4rem;
+        }
     }
 }

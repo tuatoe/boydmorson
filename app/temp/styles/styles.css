@@ -586,17 +586,16 @@ li{
 
 .fa-chevron-down{
         position: relative;
-    z-index: 20;
+        z-index: 20;
 }
 
 .fa-chevron-down:before{
   position: absolute;
   left:50%;
   left:-100px;
-  bottom:-250px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  content: "\f078";
+  content: "";
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -604,13 +603,36 @@ li{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin-right: 10px;
-  font-size: 1.2rem;
   color:#FFF;
-  font-size: 4rem;
 }
 
 .fa-chevron-down:before:hover{
   color:#9d2c38 !important;
+}
+
+@media(min-width:530px) {
+
+  .fa-chevron-down:before {
+    content: "\f078";
+    bottom: -80px;
+    font-size: 2rem;
+  }
+}
+
+@media(min-width:800px) {
+
+  .fa-chevron-down:before {
+    bottom: -80px;
+    font-size: 3rem;
+  }
+}
+
+@media(min-width:1200px) {
+
+  .fa-chevron-down:before {
+    bottom: -250px;
+    font-size: 4rem;
+  }
 }
 
 .large-hero{
@@ -680,8 +702,8 @@ li{
 .large-hero__title{
   font-weight:100;
   color:#0f2472;
-  font-size:2rem;
-  margin-top:.5em;
+  font-size:1.6rem;
+  margin-top:2em;
   margin-bottom:0;
   font-weight: bold;
 }
@@ -693,6 +715,7 @@ li{
 @media(min-width:530px) {
 
   .large-hero__title {
+    margin-top: .5rem;
     font-size: 2.8rem;
   }
 }
@@ -2082,7 +2105,7 @@ li{
 
 .nav-tab__link {
   float:left;
-  border:1px solid #eaeae4;
+  border:1px solid #FFF;
   color:#eaeae4;
   list-style: none;
   padding:10px;
@@ -2091,14 +2114,27 @@ li{
   font-size:.97rem;
 }
 
+.nav-tab__link button{
+  background-color:transparent;
+  color:#FFF;
+}
+
 .nav-tab__link--current{
   color:#0f2472;
   background-color:#eaeae4;
 }
 
+.nav-tab__link--current button{
+  color:#0f2472;
+}
+
 .nav-tab__link:hover{
-  background-color:#0f2472;
-  color:#FFF;
+  background-color:#eaeae4;
+  color:#0f2472;
+}
+
+.nav-tab__link:hover button{
+  color:#0f2472;
 }
 
 @media(min-width:530px) {
@@ -2200,10 +2236,21 @@ li{
   margin-bottom:15px;
 }
 
+.nav-tab2__link button{
+  padding:0;
+  margin:0;
+  background-color:transparent;
+  color:#0f2472;
+}
+
 .nav-tab2__link--current{
   color:#FFF;
   background-color:#0f2472;
   position: relative;
+}
+
+.nav-tab2__link--current button{
+  color:#FFF;
 }
 
 .nav-tab2__link--current:before {
@@ -2245,6 +2292,10 @@ li{
   background-color:#0f2472;
   color:#FFF;
   position: relative;
+}
+
+.nav-tab2__link:hover button{
+  color:#FFF;
 }
 
 .nav-tab2__link:hover:before {

@@ -63,8 +63,12 @@
      
       
     &__link {
+        button{
+            background-color:transparent;
+            color:#FFF;
+        }
         float:left;
-        border:1px solid $super-light-gray;
+        border:1px solid #FFF;
         color:$super-light-gray;
         list-style: none;
         padding:10px;
@@ -72,6 +76,10 @@
         text-align: center;
         font-size:.97rem;
         &--current{
+             button{
+            
+            color:$main-blue;
+        }
             color:$main-blue;
             background-color:$super-light-gray;
         }
@@ -79,8 +87,11 @@
         
         
         &:hover{
-            background-color:$main-blue;
-             color:#FFF;
+            background-color:$super-light-gray;;
+             color:$main-blue;
+            button{
+                color:$main-blue;
+            }
         }
         
         @mixin atSmall{
@@ -172,7 +183,17 @@
         text-align: center;
         font-size:.97rem;
         margin-bottom:15px;
+        button{
+            padding:0;
+            margin:0;
+            background-color:transparent;
+            color:$main-blue;
+        }
         &--current{
+             button{
+          
+            color:#FFF;
+        }
                 color:#FFF;
                 background-color:$main-blue;
                 position: relative;
@@ -215,6 +236,9 @@
              background-color:$main-blue;
              color:#FFF;
              position: relative;
+            button{
+                color:#FFF;
+            }
              &:before {
                 content:"\f0d7";
                 position: absolute;
