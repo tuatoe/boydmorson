@@ -22,11 +22,11 @@ img
     box-sizing: border-box;
 }
 a {
-  color:#555;
-  text-decoration: none;
+  color:$main-blue;
     
     &:hover{
         color:$darkBlue;
+        text-decoration: underline;
     }
 }
 
@@ -38,6 +38,10 @@ hr{
     border:1px dotted #FFF;
     line-height: 1.625;
 }
+hr.blue-hr{
+    border: 1px dotted $main-blue;
+    line-height: 1.625;
+}
 
 
 
@@ -46,13 +50,16 @@ button{
     border-radius: 5px;
 }
 
-.white-text{
-    color:#FFF;
+.white-text {
+    color:#FFF !important;
+}
+.blue-text {
+    color:$main-blue !important;
 }
 
 .read-more{
     cursor: pointer;
-    color: $lightGray;
+    color: #36c;
     &:hover{
         color:$darkBlue;
     }
@@ -60,7 +67,7 @@ button{
 
 p {
     a{
-        color:#FFF;
+        color:$main-blue;
         font-weight: bold;
     }
 }
@@ -107,3 +114,34 @@ li{
     padding:0;
 }
 
+
+.margin-top-15{
+    margin-top:15px;
+}
+
+
+.fa-chevron-down{
+        position: relative;
+    z-index: 20;
+        &:before{
+        position: absolute;
+        left:50%;
+        left:-100px;
+        bottom:-250px;
+        transform: translateX(-50%);
+        content: "\f078";
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        margin-right: 10px;
+        font-size: 1.2rem;
+        color:#FFF;
+        font-size: 4rem;
+        &:hover{
+                color:$dark-red !important;
+            }
+    }
+}

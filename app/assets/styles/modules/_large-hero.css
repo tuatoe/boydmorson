@@ -1,5 +1,6 @@
 .large-hero{
   background-image: url('../../assets/images/hero-large-2.jpg');
+    position: relative;
   min-height:250px;
     @mixin atSmall{
         min-height: 350px;
@@ -46,7 +47,7 @@
 
   &__title{
     font-weight:100;
-    color:$mainBlue;
+    color:$main-blue;
     font-size:2rem;
     margin-top:.5em;
       margin-bottom:0;

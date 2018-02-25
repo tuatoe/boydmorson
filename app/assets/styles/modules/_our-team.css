@@ -1,5 +1,6 @@
 .team-section{
-    background-image: url('../../assets/images/our-team.jpg');
+    /*background-image: url('../../assets/images/our-team.jpg');*/
+    background-color:$super-light-gray;
     padding-bottom:30px;
     background-attachment: fixed;
     background-position: center;
@@ -39,7 +40,7 @@
         border:4px solid #4d7c8c;
     }
     &__name{
-        color:#FFF;
+        color:$main-blue;
         text-align: center;
         font-size:1rem;
         font-weight: bold;
@@ -47,7 +48,7 @@
     }
     
     &__position{
-        color: #FFF;
+        color: $main-blue;
         text-align: center;
         font-weight: 400;
         font-size: 1rem;

@@ -3,8 +3,8 @@
     color:#FFF;
     position: relative;
     display: none;
-    @mixin atLarge{
-         background-color:#5998a1; 
+    @mixin atLarge {
+        background-color:$main-blue; 
         display: block;
         
     }

@@ -1,9 +1,16 @@
-$mainBlue: #123241;
+$main-blue: #0f2472;
+$super-light-gray: #eaeae4;
+$main-red:#d74150;
+$dark-red: #9d2c38;
+
+
 $darkBlue:#0C2074;
 $mainOrange: #d59541;
 $mainGreen: #79b91c; 
-$mainLightBlue:#5998a1;
+$mainLightBlue:#0f2472;
 $mainGray:#363636;
 $darkGray: #252525;
 $lightGray: #888888;
 $red: #D93F4D;
+
+

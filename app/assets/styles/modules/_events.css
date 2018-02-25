@@ -1,26 +1,11 @@
 .events{
-     /* The image used */
-    /*background-image: url('../../assets/images/events-bg.jpg');*/
-   
-    /* Set a specific height */
-    /*min-height: 700px;*/
-    background-color:#f7f7f7;
 
-    /* Create the parallax scrolling effect */
-    /*background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;*/
+    background-color:$main-blue;
     
-    /*&__contents{
-        position: absolute;
-        left:0;
-        top:0;
-        width:100%;
-        height:100%;
-        padding-top:50px;
-        background-color: rgba($mainBlue,.6);
-    }*/
- 
+    address{
+        width: 200px;
+        @mixin atSmall {
+            width:100%;
+        }
+    }
 }

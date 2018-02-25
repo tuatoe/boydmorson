@@ -10,7 +10,7 @@
   }
 
   &--blue{
-    color:$mainBlue;
+    color:$main-blue;
   }
 
   &--less-margin{

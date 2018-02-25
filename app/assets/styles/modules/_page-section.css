@@ -16,43 +16,25 @@
     }
   }
     
-    &--light-blue{
-        background-color:$mainLightBlue;
-    }
 
-  &--blue{
-    background-color:$mainBlue;
+
+  &--blue {
+    background-color:$main-blue;
     color:#FFF;
   }
     
-  
-    
-    &--gray{
-        background-color:#eee;
-    }
-    
-    &--medium-gray{
-        background-color:$lightGray;
-    }
-    
-    &--dark-blue{
-        background-color:$darkBlue;
-    }
-    
-    &--dark-gray{
-         background-color:$darkGray;
-    }
-    
-    &--white{
-        background-color:#FFF;
-    }
-    &--green{
-        background-color:$mainGreen
-    }
+&--super-light-gray{
+    background-color:$super-light-gray;
+}
+
+&--white {
+    background-color:#FFF;
+}
+   
   
     &__title{
         text-align: center;
-        color:$mainBlue;
+        color:$main-blue;
         margin-bottom:.4em;
         font-size:3.5rem;
         font-weight: 300;
@@ -60,16 +42,10 @@
         font-weight: bold;
        
      
-        &--green-text{
-            color:$mainGreen;
-        }
          &--blue-text{
-            color:$mainBlue;
+            color:$main-blue;
         }
         
-        &--dark-blue-text{
-            color:$darkBlue;
-        }
         
         &--gray-text{
             color:#555;

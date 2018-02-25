@@ -70,6 +70,10 @@
 
 	var _TabContent2 = _interopRequireDefault(_TabContent);
 
+	var _Tab2Content = __webpack_require__(9);
+
+	var _Tab2Content2 = _interopRequireDefault(_Tab2Content);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	//import SlideShow from "./modules/SlideShow";
@@ -84,8 +88,8 @@
 	var stickyHeader = new _StickyHeader2.default();
 
 	var modal = new _Modal2.default();
-
 	var tabContent = new _TabContent2.default();
+	var tab2Content = new _Tab2Content2.default();
 
 	//var slideShow = new SlideShow();
 
@@ -11356,6 +11360,58 @@
 	}();
 
 	exports.default = TabContent;
+
+/***/ },
+/* 9 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _jquery = __webpack_require__(1);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var Tab2Content = function () {
+	    function Tab2Content() {
+	        _classCallCheck(this, Tab2Content);
+
+	        this.events();
+	    }
+
+	    _createClass(Tab2Content, [{
+	        key: 'events',
+	        value: function events() {
+
+	            (0, _jquery2.default)('.nav-tab2 div').on('click', this.showActiveTab);
+	        }
+	    }, {
+	        key: 'showActiveTab',
+	        value: function showActiveTab() {
+	            var $that = (0, _jquery2.default)(this);
+	            var tab_id = $that.attr('data-tab2');
+
+	            (0, _jquery2.default)('.nav-tab2 div').removeClass('nav-tab2__link--current');
+	            (0, _jquery2.default)('.nav-tab2__content').removeClass('nav-tab2__current-tab');
+
+	            $that.addClass('nav-tab2__link--current');
+	            (0, _jquery2.default)('#' + tab_id).addClass('nav-tab2__current-tab');
+	        }
+	    }]);
+
+	    return Tab2Content;
+	}();
+
+	exports.default = Tab2Content;
 
 /***/ }
 /******/ ]);

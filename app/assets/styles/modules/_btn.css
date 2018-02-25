@@ -1,59 +1,39 @@
 .btn{
-  background-color:$mainBlue;
-  color:#FFF;
-  text-decoration: none;
-  padding: .6em 1.6em ;
-  display: inline-block;
- cursor: pointer;
+    color:#FFF;
+    text-decoration: none;
+    padding: .6em 1.6em;
+    display: inline-block;
+    cursor: pointer;
     border-radius: 4px;
     font-weight: 200;
     font-size: .85rem;
+    font-weight: bold;
 
-    &--light-blue{
-        background-color:$mainLightBlue;
-        border-radius: 0;
-        border-radius: 15px;;
-      &:hover{
-          background-color:$mainGreen;
-          color:#FFF;
-         
-          
-      }
-    } 
-    
-    &--dark-blue{
-        background-color:$darkBlue;
-      &:hover{
-          background-color:$mainLightBlue;
-          color:#FFF;
-         
-          
-      } 
-    }    
-  &--orange{
-    background:$mainOrange;
-       &:hover{
-          background-color:$mainGreen;
-           
-      }
+    &--red{
+        background-color:$main-red;
+        color:#FFF;
+          &:hover{
+             background-color:$dark-red;
+            text-decoration: underline;
+        }
     }
-
-  &--green{
-      background-color:$mainGreen;
-      &:hover{
-          background-color:$mainOrange;
-      }
-  }
-      
-  &--large{
-    padding: 1.1rem 1.9rem;
-      color:#FFF;
-    @mixin atSmall{
-        font-size:1.25rem;
+    &--red-outline{
+        background-color:transparent;
+        border:2px solid $main-red;
+        border-radius: 4px;
+        &:hover{
+             background-color:$dark-red;
+             border:2px solid $dark-red;
+            text-decoration: underline;
+        }
     }
-  }
     
-    &--position-absolute{
+    &--large{
+         padding: 1em 2.5em;
+        font-size:1rem;
+    }
+    
+    &--position-absolute {
         position: absolute;
         top:10px;
     }

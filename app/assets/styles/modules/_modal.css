@@ -46,7 +46,7 @@
           border-radius: .3rem;
           text-transform: uppercase;
           &:hover{
-              background-color:$mainBlue;
+              background-color:$main-blue;
           }
       }
   }
