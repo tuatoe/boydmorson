@@ -12,7 +12,7 @@
     a {
         color:#FFF;
         &:hover{
-            color:$mainLightBlue;
+            color:$main-red;
             text-decoration: underline;
         }
     }
@@ -22,7 +22,7 @@
             
             list-style: none;
             float:left;
-            margin-right:30px;
+            margin-right:18px;
             ul{
                 margin-top:10px;
                 li{

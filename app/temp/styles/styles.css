@@ -489,6 +489,7 @@ img
 
 a {
   color:#0f2472;
+    text-decoration: none;
 }
 
 a:hover{
@@ -539,11 +540,27 @@ p a{
 }
 
 .phone{
-        position: relative;
-    }
+    position: relative;
+}
 
 .phone:before{
   content: "\f095";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-right:10px;
+  font-size:1.2rem;
+}
+
+.time{
+    position: relative;
+}
+
+.time:before{
+  content: "\f017";
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -1949,14 +1966,14 @@ li{
 }
 
 .footer a:hover{
-  color:#0f2472;
+  color:#d74150;
   text-decoration: underline;
 }
 
 .footer__links li {
   list-style: none;
   float:left;
-  margin-right:30px;
+  margin-right:18px;
 }
 
 .footer__links li ul{

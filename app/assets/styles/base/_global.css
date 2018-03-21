@@ -23,6 +23,7 @@ img
 }
 a {
   color:$main-blue;
+    text-decoration: none;
     
     &:hover{
         color:$darkBlue;
@@ -74,20 +75,36 @@ p {
 
 
 .phone{
-        position: relative;
-        &:before{
-                content: "\f095";
-            display: inline-block;
-            font: normal normal normal 14px/1 FontAwesome;
-            font-size: inherit;
-            text-rendering: auto;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-             margin-right:10px;
-             font-size:1.2rem;
-        }
+    position: relative;
+    &:before{
+            content: "\f095";
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+         margin-right:10px;
+         font-size:1.2rem;
     }
-    
+}
+
+.time{
+    position: relative;
+    &:before{
+            content: "\f017";
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+         margin-right:10px;
+         font-size:1.2rem;
+    }
+}
+
+  
 .email{
     position: relative;
       &:before{

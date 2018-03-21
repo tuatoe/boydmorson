@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
@@ -32,8 +32,8 @@
 </head>
 
 <body>   
-    
-  <header class="site-header">
+
+<header class="site-header">
        <div class="site-top-header">
         <div class="wrapper">
             <ul>
@@ -52,7 +52,7 @@
         <div class="site-header__menu-icon__middle"> </div>
       </div>
 
-      <div class="site-header__menu-content">
+      <nav class="site-header__menu-content">
         <div class="site-header__btn-container">
            <button class="btn btn-small btn--red open-modal" data-matching-modal="donate-modal">DONATE NOW</button>
         </div>
@@ -65,12 +65,11 @@
             <li><a href="#contact" id="contact-link">CONTACT</a></li>
           </ul>
         </nav>
-      </div>
+      </nav>
     </div>
   </header>
-
     
-<div id="home" class="large-hero" data-matching-link="#home-link">
+<section id="home" class="large-hero" data-matching-link="#home-link">
    <div class="large-hero__bg">
         <div class="large-hero__bg__text-content">
             <h2 class="large-hero__title large-hero__title--white">We need your support</h2>
@@ -81,10 +80,9 @@
        
     </div>
    
-</div>
+</section>
     
-    
-<div id="about" class="page-section page-section--white about" data-matching-link="#about-link">
+<section id="about" class="page-section page-section--white about" data-matching-link="#about-link">
      <div class="page-section__title page-section__title--dark-blue-text">ABOUT OLM </div>
     <div class="wrapper">
         <div class="row row--gutters">
@@ -118,10 +116,10 @@
         </div>
         
     </div>
-</div>
+</section>
     
 <!--start meet our team-->
-<div id="our-team" class="page-section page-section--no-b-padding-until-large page-section--our-team team-section" data-matching-link="#our-team-link">
+<section id="our-team" class="page-section page-section--no-b-padding-until-large page-section--our-team team-section" data-matching-link="#our-team-link">
      <div class="wrapper wrapper--no-padding-until-large">
         <h2 class="page-section__title page-section__title--blue-text">OUR TEAM</h2>
             <div class="row row--gutters row--gutters-small row--t-padding">
@@ -173,9 +171,9 @@
                 </div>
             </div>
     </div>
-</div>
+</section>
 
-<div id="events" class="page-section events" data-matching-link="#events-link">
+<section id="events" class="page-section events" data-matching-link="#events-link">
     <div class="events__contents">
         <div class="page-section__title page-section__title--white-text">EVENTS </div>
         <div class="wrapper">
@@ -343,10 +341,10 @@
             </div>
         </div>
      </div>
-</div>
+</section>
     
 
-<div class="programs page-section page-sectoin-white" data-matching-link="#programs-link">
+<section class="programs page-section page-sectoin-white" data-matching-link="#programs-link">
     <div class="page-section__title page-section__title--blue-text">Programs</div>
     <div class="wrapper">
         <div class="row nav-tab2">
@@ -436,20 +434,22 @@ opportunity to interact with each other in a safe environment.</li>
         </div>
     </div>
     </div>
-</div>
+</section>
 
     
-<div id="contact" class="page-section page-section--super-light-gray contact" data-matching-link="#contact-link">
+<section id="contact" class="page-section page-section--super-light-gray contact" data-matching-link="#contact-link">
      <div class="page-section__title page-section__title--blue-text">CONTACT US</div>
     <div class="wrapper">
         <div class="row row--gutters">
             <div class="row__large-6 reveal-contact">
                 <h2 class="blue-text">Organization of Liberians in Minnesota (OLM)</h2>
                 <hr class="blue-hr" />
-                <h3  class="blue-text">Address</h3>
+                <h3 class="blue-text">Address</h3>
                 <address class="blue-text">7001 78th Ave N #200, Minneapolis, MN 55445</address>
                 <h3 class="blue-text">Phone</h3>
-                <p  class="blue-text phone"><a href="tel:763-208-5739">763-208-5739</a></p>
+                <p class="blue-text phone"><a href="tel:763-208-5739">763-208-5739</a></p>
+                <h3 class="blue-text">Hour</h3>
+                <p class="blue-text time">9AM - 6PM Central Time (CT)</p>
                 <h3 class="blue-text">Email</h3>
                 <p  class="blue-text email"><a href="mailto:olmadmin@olmus.org" target="_top">olmadmin@olmus.org</a></p>
             </div>
@@ -457,8 +457,9 @@ opportunity to interact with each other in a safe environment.</li>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2816.5509191977167!2d-93.37319688445487!3d45.094899079098376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b3375c00b7b2b1%3A0x1a022985867c67b2!2s7001+78th+Ave+N%2C+Minneapolis%2C+MN+55445!5e0!3m2!1sen!2sus!4v1506391248812" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </div>
+       
     </div>
-</div>    
+</section>    
 
 <footer class="footer page-section--blue">
     <div class="wrapper">
@@ -466,44 +467,54 @@ opportunity to interact with each other in a safe environment.</li>
             <li>
                 <h6 class="footer__links__title">CITIZEN / RESIDENT RESOURCES</h6>
                 <ul>
-                    <li><a href="http://www.bakertilly.com/uploads/minnesota-residency-requirements.pdf">Minnesota Residency Requirements (pdf)</a></li>
-                    <li><a href="https://mn.gov/admin/citizen/buildings-grounds/maps/">Capitol Area Maps</a></li>
-                    <li><a href="http://www.mncourts.gov/">Courts</a></li>
-                    <li><a href="https://www.leg.state.mn.us/leg/districtfinder">Elected Officials</a></li>
-                    <li><a href="http://www.state.mn.us/opendata/">Minnesota Open Data</a></li>
-                    <li><a href="http://www.dot.state.mn.us/statemap/">Minnesota State Map</a></li>
-                    <li><a href="https://mn.gov/portal/government/state/">State Government Directory</a></li>
-                    <li><a href="https://mn.gov/portal/government/state/social-media/">State Social Media</a></li>
+                    <li><a target="_blank" href="http://www.bakertilly.com/uploads/minnesota-residency-requirements.pdf">Minnesota Residency Requirements (pdf)</a></li>
+                    <li><a target="_blank" href="https://mn.gov/admin/citizen/buildings-grounds/maps/">Capitol Area Maps</a></li>
+                    <li><a target="_blank" href="http://www.mncourts.gov/">Courts</a></li>
+                    <li><a target="_blank" href="https://www.leg.state.mn.us/leg/districtfinder">Elected Officials</a></li>
+                    <li><a target="_blank" href="http://www.state.mn.us/opendata/">Minnesota Open Data</a></li>
+                    <li><a target="_blank" href="http://www.dot.state.mn.us/statemap/">Minnesota State Map</a></li>
+                    <li><a target="_blank" href="https://mn.gov/portal/government/state/">State Government Directory</a></li>
+                    <li><a target="_blank" href="https://mn.gov/portal/government/state/social-media/">State Social Media</a></li>
+                    <li><a target="_blank" href="http://www.brooklynpark.org">City of Brooklyn Park</a></li>
+                    <li><a target="_blank" href="http://www.cityofbrooklyncenter.org/">City of Brooklyn Center</a></li>
                 </ul>
             </li>
         
             <li>
                 <h6 class="footer__links__title">EMPLOYEE RESOURCES</h6>
                 <ul>
-                    <li><a href="https://www.minnesotaworks.net/">MN Works</a></li>
-                    <li><a href="https://mn.gov/mmb/careers/">Minnesota Careers</a></li>
+                    <li><a target="_blank" href="https://www.minnesotaworks.net/">MN Works</a></li>
+                    <li><a target="_blank" href="https://mn.gov/mmb/careers/">Minnesota Careers</a></li>
                 </ul>
             </li>
             
             <li>
                 <h6 class="footer__links__title">BUSINESS RESOURCES</h6>
                 <ul>
-                    <li><a href="http://www.revenue.state.mn.us/businesses/Pages/Tax-Types.aspx">Business Taxes</a></li>
-                    <li><a href="https://mn.gov/elicense/">License Minnesota</a></li>
-                    <li><a href="http://www.sos.state.mn.us/home/?page=92">Starting a Business</a></li>
-                    <li><a href="http://www.uimn.org/uimn/">Unemployment Insurance</a></li>
-                    <li><a href="http://www.dli.mn.gov/WC/AboutCov.asp">Workers' Compensation</a></li>
-                    <li><a href=""></a></li>
+                    <li><a target="_blank" href="http://www.revenue.state.mn.us/businesses/Pages/Tax-Types.aspx">Business Taxes</a></li>
+                    <li><a target="_blank" href="https://mn.gov/elicense/">License Minnesota</a></li>
+                    <li><a target="_blank" href="http://www.sos.state.mn.us/home/?page=92">Starting a Business</a></li>
+                    <li><a target="_blank" href="http://www.uimn.org/uimn/">Unemployment Insurance</a></li>
+                    <li><a target="_blank" href="http://www.dli.mn.gov/WC/AboutCov.asp">Workers' Compensation</a></li>
+                    <li><a target="_blank" href=""></a></li>
                 </ul>
             </li>
             
             <li>
                 <h6 class="footer__links__title">TRAVEL &amp; RELOCATION</h6>
                  <ul>
-                    <li><a href="https://dps.mn.gov/divisions/dvs/pages/default.aspx">Driver &amp; Vehicle Online Services</a></li>
-                    <li><a href="http://www.exploreminnesota.com/index.aspx">Explore Minnesota</a></li>
-                    <li><a href="http://www.dnr.state.mn.us/state_parks/index.html">Minnesota State Parks</a></li>
-                    <li><a href="https://mn.gov/deed/newscenter/publications/">Moving to Minnesota (pdf)</a></li>
+                    <li><a target="_blank" href="https://dps.mn.gov/divisions/dvs/pages/default.aspx">Driver &amp; Vehicle Online Services</a></li>
+                    <li><a target="_blank" href="http://www.exploreminnesota.com/index.aspx">Explore Minnesota</a></li>
+                    <li><a target="_blank" href="http://www.dnr.state.mn.us/state_parks/index.html">Minnesota State Parks</a></li>
+                    <li><a target="_blank" href="https://mn.gov/deed/newscenter/publications/">Moving to Minnesota (pdf)</a></li>
+                </ul>
+            </li>
+             <li>
+                <h6 class="footer__links__title">USEFUL LINKS</h6>
+                 <ul>
+                    <li><a target="_blank" href="http://www.liberianembassyus.org">The Liberian Embassy</a></li>
+                    <li><a target="_blank" href="http://www.ulaalib.org">The Union of Liberians In The Americas (ULAA)</a></li>
+                    
                 </ul>
             </li>
         </ul>
