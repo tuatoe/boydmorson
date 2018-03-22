@@ -2291,7 +2291,7 @@ li{
   .nav-tab2__link--current:before {
     content: "\f0d7";
     position: absolute;
-    bottom: -45px;
+    bottom: -40px;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -2347,7 +2347,7 @@ li{
   .nav-tab2__link:hover:before {
     content: "\f0d7";
     position: absolute;
-    bottom: -45px;
+    bottom: -40px;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);

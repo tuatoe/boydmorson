@@ -215,7 +215,7 @@
                      &:before {
                         content:"\f0d7";
                         position: absolute;
-                        bottom:-45px;
+                        bottom:-40px;
                         left:50%;
                         transform: translateX(-50%);
                         color:$main-blue;
@@ -267,7 +267,7 @@
              &:before {
                 content:"\f0d7";
                 position: absolute;
-                bottom:-45px;
+                bottom:-40px;
                 left:50%;
                 transform: translateX(-50%);
                 color:$main-blue;
