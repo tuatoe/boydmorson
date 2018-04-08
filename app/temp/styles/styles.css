@@ -676,6 +676,10 @@ li{
   }
 }
 
+.uppercase {
+    text-transform: uppercase !important;
+}
+
 .large-hero{
   background-image: url('../../assets/images/hero-large-2.jpg');
     position: relative;
