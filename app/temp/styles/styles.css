@@ -601,6 +601,30 @@ li{
     margin-top:15px;
 }
 
+.hide-xs-small-screen {
+    display: none;
+}
+
+@media(min-width:530px) {
+
+  .hide-xs-small-screen {
+    display: block;
+  }
+}
+
+.hide-large-screen {
+    display: block;
+    width:150px;
+    margin:0 auto;
+}
+
+@media(min-width:530px) {
+
+  .hide-large-screen {
+    display: none;
+  }
+}
+
 .fa-chevron-down{
         position: relative;
         z-index: 20;

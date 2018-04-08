@@ -135,6 +135,20 @@ li{
 .margin-top-15{
     margin-top:15px;
 }
+.hide-xs-small-screen {
+    display: none;
+    @mixin atSmall{
+        display: block;
+    }
+}
+.hide-large-screen {
+    display: block;
+    width:150px;
+    margin:0 auto;
+    @mixin atSmall {
+        display: none;
+    }
+}
 
 
 .fa-chevron-down{
