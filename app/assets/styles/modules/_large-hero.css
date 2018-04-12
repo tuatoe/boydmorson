@@ -1,15 +1,15 @@
 .large-hero{
   background-image: url('../../assets/images/hero-large-2.jpg');
     position: relative;
-  min-height:250px;
+  min-height:350px;
     @mixin atSmall{
-        min-height: 350px;
+        min-height: 500px;
     }
     @mixin atMedium{
          min-height:400px;
     }
     @mixin atLarge{
-        min-height:800px;
+        min-height:650px;
     }
   padding-bottom:30px;
   background-attachment: fixed;

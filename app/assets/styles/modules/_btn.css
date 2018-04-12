@@ -1,12 +1,12 @@
 .btn{
     color:#FFF;
     text-decoration: none;
-    padding: .6em 1.6em;
+    padding: 1.5rem 4rem;
     display: inline-block;
     cursor: pointer;
     border-radius: 4px;
     font-weight: 200;
-    font-size: .85rem;
+    font-size: 1rem;
     font-weight: bold;
 
     &--red{
@@ -28,8 +28,12 @@
         }
     }
     
+    &--small{
+        padding:.6rem 2rem !important;
+    }
+    
     &--large{
-         padding: 1em 2.5em;
+         padding: 1.5em 4em !important;
         font-size:1rem;
     }
     

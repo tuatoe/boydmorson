@@ -8,7 +8,7 @@ img
   width:100%;
 }
 .img-caption{
-    font-size:.75rem;
+    font-size:1rem;
     padding-top:0;
     margin-top:0;
     font-style: italic;
@@ -24,9 +24,10 @@ img
 a {
   color:$main-blue;
     text-decoration: none;
+    font-size:1rem;
     
     &:hover{
-        color:$darkBlue;
+        color:#FFF;
         text-decoration: underline;
     }
 }
@@ -143,7 +144,7 @@ li{
 }
 .hide-large-screen {
     display: block;
-    width:130px;
+    width:190px;
     margin:0 auto;
     @mixin atSmall {
         display: none;
@@ -198,4 +199,12 @@ li{
 
 .uppercase {
     text-transform: uppercase !important;
+}
+
+.margin-top-10 {
+    margin-top:1rem;
+}
+
+.flex form{ 
+   float:left;
 }

@@ -472,7 +472,7 @@ img
 }
 
 .img-caption{
-    font-size:.75rem;
+    font-size:1rem;
     padding-top:0;
     margin-top:0;
     font-style: italic;
@@ -490,10 +490,11 @@ img
 a {
   color:#0f2472;
     text-decoration: none;
+    font-size:1rem;
 }
 
 a:hover{
-  color:#0C2074;
+  color:#FFF;
   text-decoration: underline;
 }
 
@@ -614,7 +615,7 @@ li{
 
 .hide-large-screen {
     display: block;
-    width:130px;
+    width:190px;
     margin:0 auto;
 }
 
@@ -680,10 +681,18 @@ li{
     text-transform: uppercase !important;
 }
 
+.margin-top-10 {
+    margin-top:1rem;
+}
+
+.flex form{ 
+   float:left;
+}
+
 .large-hero{
   background-image: url('../../assets/images/hero-large-2.jpg');
     position: relative;
-  min-height:250px;
+  min-height:350px;
   padding-bottom:30px;
   background-attachment: fixed;
   background-position: center;
@@ -695,7 +704,7 @@ li{
 @media(min-width:530px) {
 
   .large-hero {
-    min-height: 350px;
+    min-height: 500px;
   }
 }
 
@@ -709,7 +718,7 @@ li{
 @media(min-width:1200px) {
 
   .large-hero {
-    min-height: 800px;
+    min-height: 650px;
   }
 }
 
@@ -814,12 +823,12 @@ li{
 .btn{
     color:#FFF;
     text-decoration: none;
-    padding: .6em 1.6em;
+    padding: 1.5rem 4rem;
     display: inline-block;
     cursor: pointer;
     border-radius: 4px;
     font-weight: 200;
-    font-size: .85rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -845,8 +854,12 @@ li{
   text-decoration: underline;
 }
 
+.btn--small{
+  padding:.6rem 2rem !important;
+}
+
 .btn--large{
-  padding: 1em 2.5em;
+  padding: 1.5em 4em !important;
   font-size:1rem;
 }
 
@@ -968,6 +981,7 @@ li{
   font-weight: 300;
   text-transform: uppercase;
   font-weight: bold;
+  padding-top:6rem;
 }
 
 .page-section__title--blue-text{
