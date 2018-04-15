@@ -1,5 +1,5 @@
 .large-hero{
-  background-image: url('../../assets/images/hero-large-2.jpg');
+  /*background-image: url('../../assets/images/hero-large-2.jpg');*/
     position: relative;
   min-height:350px;
     @mixin atSmall{

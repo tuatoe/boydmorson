@@ -2,6 +2,7 @@
   "name": "olmus",
   "version": "1.0.0",
   "dependencies": {
+    "install": "^0.11.0",
     "jquery-smooth-scroll": "^2.1.2",
     "lazysizes": "^3.0.0",
     "normalize.css": "^5.0.0",
@@ -32,21 +33,11 @@
     "postcss-mixins": "^5.4.0",
     "postcss-nested": "^1.0.0",
     "postcss-simple-vars": "^3.0.0",
-    "webpack": "^1.13.1"
+    "proper": "^0.5.1",
+    "webpack": "^1.15.0"
   },
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tuatoe/life-and-basketball.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tuatoe/life-and-basketball/issues"
-  },
-  "homepage": "https://github.com/tuatoe/life-and-basketball#readme",
-  "description": ""
+  }
 }

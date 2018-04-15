@@ -77,6 +77,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	//import SlideShow from "./modules/SlideShow";
+	//import Carousel from "./modules/Carousel";
 
 	var mobileMenu = new _MobileMenu2.default();
 
@@ -91,6 +92,7 @@
 	var modal = new _Modal2.default();
 	var tabContent = new _TabContent2.default();
 	var tab2Content = new _Tab2Content2.default();
+	//var carousel = new Carousel;
 
 	//var slideShow = new SlideShow();
 
@@ -10821,7 +10823,7 @@
 
 	    this.lazyImages = (0, _jquery2.default)('.lazyload');
 	    this.siteHeader = (0, _jquery2.default)('.site-header');
-	    this.headerTriggerElement = (0, _jquery2.default)('.large-hero__title');
+	    this.headerTriggerElement = (0, _jquery2.default)('.carousel__title');
 	    this.createHeaderWaypoint();
 	    this.pageSections = (0, _jquery2.default)('.page-section');
 	    this.headerLinks = (0, _jquery2.default)('.primary-nav a');
@@ -10841,6 +10843,7 @@
 	    key: 'createHeaderWaypoint',
 	    value: function createHeaderWaypoint() {
 	      var that = this;
+
 	      new Waypoint({
 	        element: this.headerTriggerElement[0],
 	        handler: function handler(direction) {

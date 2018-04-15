@@ -8,6 +8,7 @@
         animation: fadeEffect 2s;
         min-height:10rem;
         margin-top:2em;
+        padding:0 2rem;
          color:#FFF;
          &.nav-tab__current-tab{
             animation: fadeEffect 2s;
@@ -16,19 +17,19 @@
          
          &__block{
              border:1px solid $super-light-gray;
-             margin-bottom:20px;
-             padding:20px;
+             margin-bottom:2rem;
+             padding:2rem;
              position: relative;
              p{
                  color:#FFF;
-                 font-size:.85rem;
+                 font-size:.1.6rem;
                  text-align: left;
                  line-height: 1.625;
                  margin:0;
              }
              &__title{
                  border-bottom:1px solid #CCC;
-                 padding-bottom:5px;
+                 padding-bottom:.5rem;
                  width:71%;
                  @mixin atMedium{
                     width:81%; 
@@ -36,12 +37,12 @@
              }
              &__date{
                 position: absolute;
-                right: 10px;
+                right: 1rem;
                 top: 30%;
-                width: 70px;
+                width: 7rem;
                 text-align: center;
                 border: 1px solid #ccc;
-                padding: 15px;
+                padding: 1.5rem;
                  color:#FFF;
              }
              
@@ -66,6 +67,7 @@
         button{
             background-color:transparent;
             color:#FFF;
+            font-size:1.6rem;
         }
         float:left;
         border:1px solid #FFF;
@@ -74,7 +76,7 @@
         padding:10px;
         cursor: pointer;
         text-align: center;
-        font-size:.97rem;
+        font-size:1.6rem;
         &--current{
              button{
             
@@ -95,11 +97,11 @@
         }
         
         @mixin atSmall{
-            padding:15px;
-            font-size:1.2rem;
+            padding:1.5rem;
+            font-size:1.6rem;
         }
         @mixin atMedium{
-            padding:15px;
+            padding:1.5rem;
             font-size:1rem;
         }
     }
@@ -134,7 +136,7 @@
          }
          
          &__block{
-             margin-bottom:20px;
+             margin-bottom:2rem;
              padding:0;
              position: relative;
              p{
@@ -142,7 +144,7 @@
                  font-size:1.1rem;
                  text-align: left;
                  line-height: 1.625;
-                 margin:0 0 20px 0;
+                 margin:0 0 2rem 0;
                  font-weight: 300;
              }
              &__title {
@@ -161,7 +163,7 @@
                 margin:0 0 0 20px;
                 padding:0;
                  li{
-                     margin-bottom:10px;
+                     margin-bottom:1rem;
                      line-height: 1.625;
                      p{
                          font-weight: 300;
@@ -178,11 +180,11 @@
         border-right:4px solid #FFF;
         color:$main-blue;
         list-style: none;
-        padding:10px;
+        padding:1rem;
         cursor: pointer;
         text-align: center;
-        font-size:.97rem;
-        margin-bottom:15px;
+        font-size:1.6rem;
+        margin-bottom:1.5rem;
         button{
             padding:0;
             margin:0;
@@ -200,12 +202,12 @@
                  &:before {
                 content:"\f0d7";
                 position: absolute;
-                bottom:-20px;
+                bottom:-2rem;
                 left:50%;
                 transform: translateX(-50%);
                 color:$main-blue;
                 display: inline-block;
-                font: normal normal normal 14px/1 FontAwesome;
+                font: normal normal normal 1.6rem/1 FontAwesome;
                  font-size:2rem;
                 text-rendering: auto;
                 -webkit-font-smoothing: antialiased;
@@ -215,12 +217,12 @@
                      &:before {
                         content:"\f0d7";
                         position: absolute;
-                        bottom:-40px;
+                        bottom:-4rem;
                         left:50%;
                         transform: translateX(-50%);
                         color:$main-blue;
                         display: inline-block;
-                        font: normal normal normal 14px/1 FontAwesome;
+                        font: normal normal normal 1.6rem/1 FontAwesome;
                         font-size:5rem;
                         text-rendering: auto;
                         -webkit-font-smoothing: antialiased;
@@ -242,12 +244,12 @@
              &:before {
                 content:"\f0d7";
                 position: absolute;
-                bottom:-20px;
+                bottom:-2rem;
                 left:50%;
                 transform: translateX(-50%);
                 color:$main-blue;
                 display: inline-block;
-                font: normal normal normal 14px/1 FontAwesome;
+                font: normal normal normal 1.6rem/1 FontAwesome;
                  font-size:2rem;
                 text-rendering: auto;
                 -webkit-font-smoothing: antialiased;
@@ -267,12 +269,12 @@
              &:before {
                 content:"\f0d7";
                 position: absolute;
-                bottom:-40px;
+                bottom:-4rem;
                 left:50%;
                 transform: translateX(-50%);
                 color:$main-blue;
                 display: inline-block;
-                font: normal normal normal 14px/1 FontAwesome;
+                font: normal normal normal 1.6rem/1 FontAwesome;
                  font-size:5rem;
                 text-rendering: auto;
                 -webkit-font-smoothing: antialiased;
@@ -284,7 +286,7 @@
        
       
         @mixin atMedium {
-            padding:15px;
+            padding:1.5rem;
             font-size:1rem;
         }
         

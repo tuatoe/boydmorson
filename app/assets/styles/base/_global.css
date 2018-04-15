@@ -1,12 +1,17 @@
-body{
-  font-family:'Roboto',sans-serif;
-  color:#333;
+html{
+    font-size:62.5%;
 }
-img
-{
+body{
+    font-family:'Roboto',sans-serif;
+    color:#333;
+    font-size:1.6rem;
+}
+
+img{
   max-width:100%;
   width:100%;
 }
+
 .img-caption{
     font-size:1rem;
     padding-top:0;
@@ -21,10 +26,19 @@ img
 *{
     box-sizing: border-box;
 }
+address{
+    font-size: 1.6rem;
+}
+p{
+    font-size:1.6rem;
+}
+button{
+    font-size: 1.6rem
+}
 a {
   color:$main-blue;
     text-decoration: none;
-    font-size:1rem;
+    font-size:1.6rem;
     
     &:hover{
         color:#FFF;

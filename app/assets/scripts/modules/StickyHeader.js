@@ -6,7 +6,7 @@ class StickyHeader {
   constructor(){
       this.lazyImages = $('.lazyload');
       this.siteHeader = $('.site-header');
-      this.headerTriggerElement = $('.large-hero__title');
+      this.headerTriggerElement = $('.carousel__title');
       this.createHeaderWaypoint();
       this.pageSections = $('.page-section');
       this.headerLinks = $('.primary-nav a');
@@ -23,6 +23,7 @@ class StickyHeader {
 
   createHeaderWaypoint(){
     var that = this;
+    
     new Waypoint({
         element: this.headerTriggerElement[0],
         handler: function(direction){

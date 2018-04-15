@@ -6,6 +6,7 @@ import Modal from "./modules/Modal";
 import TabContent from "./modules/TabContent";
 import Tab2Content from "./modules/Tab2Content";
 //import SlideShow from "./modules/SlideShow";
+//import Carousel from "./modules/Carousel";
 
 var mobileMenu = new MobileMenu();
 
@@ -20,6 +21,7 @@ var stickyHeader = new StickyHeader();
 var modal = new Modal();
 var tabContent = new TabContent;
 var tab2Content = new Tab2Content;
+//var carousel = new Carousel;
 
 //var slideShow = new SlideShow();
 

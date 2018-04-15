@@ -8,7 +8,6 @@ module.exports = {
     filename: "[name].js"
   },
 
- 
   module: {
     loaders: [
       {

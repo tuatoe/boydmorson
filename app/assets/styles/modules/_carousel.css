@@ -1,0 +1,40 @@
+.carousel {
+    width:100%;
+    position: relative;
+    height: 72rem;
+}
+
+.carousel-inner .item{
+    height: 72rem;
+}
+
+.carousel-inner img {
+    position: absolute;
+    top:0;
+    left:0;
+    min-width: 100%;
+    z-index: 1;
+}
+.carousel-control.right,.carousel-control.left{
+    background-image: none !important
+}
+.carousel-inner .item .content{
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translateX(-50%);
+    width:100%;
+    z-index: 10;
+    color:#FFF;
+    text-align: center;
+    
+    h1 {
+        font-size:4rem;
+        margin:0;
+        padding:0;
+    }
+}
+
+
+
+

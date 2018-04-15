@@ -26,7 +26,7 @@
                 cursor: pointer;
                 padding:1.5rem .6rem;
                 margin-right:1rem;
-                font-size: .875rem;
+                font-size: 1.8rem;
                 color:$darkBlue;
                 text-decoration: none;
                 display: block;
@@ -37,7 +37,7 @@
                 }
                 
                  @mixin atLarge {
-                    font-size:.95rem;
+                    font-size:1.8rem;
                     background-color: transparent;
                      
 
