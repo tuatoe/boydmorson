@@ -1,88 +1,47 @@
 .team-section{
     /*background-image: url('../../assets/images/our-team.jpg');*/
     background-color:$super-light-gray;
-    padding-bottom:30px;
+    padding-bottom:3rem;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
 }
 
-.our-team{
-   /*background-color:rgba(255,255,255,.7);*/
-   padding:0 15px 35px 15px;
-   margin-bottom:98px;
+.our-team { 
+    padding:0 1.5rem 3.5rem 1.5rem;
+    margin-bottom:9.8rem;
     position: relative;
     text-align: center;
     
-    @mixin atSmall{
-        padding:30px 10px;
+    @mixin atSmall {
+        padding:3rem 1rem;
     }
     
     
-      @mixin atMedium{
-        padding:4px 10px;
+      @mixin atMedium {
+        padding:.4rem 1rem;
     }
     
-    @mixin atLarge{
+    @mixin atLarge {
          padding:0 1.8125rem 20px 1.8125rem;
-         margin-bottom:130px;
+         margin-bottom:13re,;
     }
     
-    &__photo{
-        border-radius: 80px;
+    &__photo {
+        border-radius: 8rem;
         overflow: hidden;
-        width:160px;
-        height: 160px;
-        margin: 0 auto -80px auto;
+        width:16rem;
+        height: 16rem;
+        margin: 0 auto -8rem auto;
         position: relative;
-        top:-80px;
-        border:4px solid #4d7c8c;
+        top:-8rem;
+        border:.4rem solid #4d7c8c;
     }
-    &__name{
-        color:$main-blue;
-        text-align: center;
-        font-size:1rem;
-        font-weight: bold;
-        margin:10px 0 0 0;
-    }
+
     
-    &__position{
-        color: $main-blue;
-        text-align: center;
-        font-weight: 400;
-        font-size: 1rem;
-        margin: .25rem 0 1rem 0;
-        font-style: italic;
-        
-        
-    }
-    
-    &--last{
+    &--last {
         margin-bottom: 0;
     }
-    &__learn-more{
-        background-color:$darkBlue;
-        color:#FFF;
-        padding:10px 8px;
-        text-align: center;
-        border-radius: 4px;
-        cursor: pointer;
-        position: absolute;
-        left: 50%;
-        right:0;
-        font-weight: 200;
-        font-size:.95rem;
-        transform: translateX(-50%);
-        bottom:15px;
-        
-        &:hover{
-            background-color: $mainLightBlue;
-        }
-        
-    }
-    p{
-        padding-bottom:10px;
-        text-align: left;
-    }
+    
 }

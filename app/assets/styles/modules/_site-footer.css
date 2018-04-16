@@ -1,0 +1,52 @@
+.footer{
+    text-align: center;
+    color:#FFF;
+    font-weight: 100;
+    font-size:1.6rem;
+    padding:3rem 0;
+    
+    .address {
+        padding-top:1.5rem;
+    }
+    
+    a {
+        color:#FFF;
+        &:hover{
+            color:$main-red;
+            text-decoration: underline;
+        }
+    }
+    
+    &__links {
+        li {
+            
+            list-style: none;
+            float:left;
+            margin-right:1.8rem;
+            ul{
+                margin-top:1rem;
+                li{
+                    float:none;
+                    text-align: left;
+                    margin-bottom:1rem;
+                }
+            }
+        }
+        
+        &:after {
+            content:'';
+            display: table;
+            clear: both;
+        }
+        
+        &__title {
+            font-size:1.6rem;
+            font-weight: bold;
+            line-height: 1.625;
+            margin:0 0 .5rem 0;
+            padding:0;
+            text-align: left;
+            border-bottom:1px dotted #FFF;
+        }
+    }
+}

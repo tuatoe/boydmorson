@@ -65,7 +65,7 @@
             display: inline-block;
             padding-right:.4375rem;
             margin-bottom:20px;
-            @mixin atLarge {
+            @mixin atMedium {
                 margin-bottom:0;
                 z-index: 1;
 

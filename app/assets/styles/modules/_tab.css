@@ -8,29 +8,34 @@
         animation: fadeEffect 2s;
         min-height:10rem;
         margin-top:2em;
-        padding:0 2rem;
          color:#FFF;
          &.nav-tab__current-tab{
             animation: fadeEffect 2s;
             display: block;
          }
          
-         &__block{
+         &__block {
              border:1px solid $super-light-gray;
              margin-bottom:2rem;
              padding:2rem;
+             margin-left:0;
              position: relative;
+             a {
+                 color:#FFF;
+                 font-size: 1.5rem;
+             }
              p{
                  color:#FFF;
-                 font-size:.1.6rem;
                  text-align: left;
                  line-height: 1.625;
                  margin:0;
+                 font-size:1.5rem;
              }
              &__title{
                  border-bottom:1px solid #CCC;
                  padding-bottom:.5rem;
                  width:71%;
+                 color:#FFF !important;
                  @mixin atMedium{
                     width:81%; 
                  }
@@ -41,7 +46,7 @@
                 top: 30%;
                 width: 7rem;
                 text-align: center;
-                border: 1px solid #ccc;
+                border: .1rem solid #ccc;
                 padding: 1.5rem;
                  color:#FFF;
              }
@@ -70,10 +75,10 @@
             font-size:1.6rem;
         }
         float:left;
-        border:1px solid #FFF;
+        border:.1rem solid #FFF;
         color:$super-light-gray;
         list-style: none;
-        padding:10px;
+        padding:1rem;
         cursor: pointer;
         text-align: center;
         font-size:1.6rem;
@@ -139,16 +144,15 @@
              margin-bottom:2rem;
              padding:0;
              position: relative;
+            
              p{
                  color:#555;
-                 font-size:1.1rem;
                  text-align: left;
                  line-height: 1.625;
                  margin:0 0 2rem 0;
                  font-weight: 300;
              }
              &__title {
-                 font-size:1.4rem;
                  color:$main-blue;
                  font-weight: 400;
                  line-height: 1.625;
@@ -165,9 +169,6 @@
                  li{
                      margin-bottom:1rem;
                      line-height: 1.625;
-                     p{
-                         font-weight: 300;
-                     }
                  }
              }
          }
@@ -183,122 +184,64 @@
         padding:1rem;
         cursor: pointer;
         text-align: center;
-        font-size:1.6rem;
         margin-bottom:1.5rem;
-        button{
+        button {
             padding:0;
             margin:0;
             background-color:transparent;
             color:$main-blue;
         }
-        &--current{
-             button{
-          
-            color:#FFF;
-        }
-                color:#FFF;
-                background-color:$main-blue;
-                position: relative;
-                 &:before {
-                content:"\f0d7";
-                position: absolute;
-                bottom:-2rem;
-                left:50%;
-                transform: translateX(-50%);
-                color:$main-blue;
-                display: inline-block;
-                font: normal normal normal 1.6rem/1 FontAwesome;
-                 font-size:2rem;
-                text-rendering: auto;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-            }
-                @mixin atSmall{
-                     &:before {
-                        content:"\f0d7";
-                        position: absolute;
-                        bottom:-4rem;
-                        left:50%;
-                        transform: translateX(-50%);
-                        color:$main-blue;
-                        display: inline-block;
-                        font: normal normal normal 1.6rem/1 FontAwesome;
-                        font-size:5rem;
-                        text-rendering: auto;
-                        -webkit-font-smoothing: antialiased;
-                        -moz-osx-font-smoothing: grayscale;
-                    }
-                   
-                }
-            
-            
-            }
         
-          &:hover {
-             background-color:$main-blue;
-             color:#FFF;
-             position: relative;
-            button{
-                color:#FFF;
-            }
-             &:before {
+        @mixin atMedium{
+            width:50%;
+            float:left;
+        }
+        
+        &--current {
+            button{color:#FFF;}
+            color:#FFF;
+            background-color:$main-blue;
+            position: relative;
+             
+            &:before {
                 content:"\f0d7";
                 position: absolute;
-                bottom:-2rem;
                 left:50%;
+                top:40%;
                 transform: translateX(-50%);
                 color:$main-blue;
                 display: inline-block;
-                font: normal normal normal 1.6rem/1 FontAwesome;
-                 font-size:2rem;
-                text-rendering: auto;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
+                font: normal normal normal 5rem/1 FontAwesome;
+
+                @mixin atMedium {
+                    top:40%;
+                    font: normal normal normal 6rem/1 FontAwesome;
+                }
+            }
+        }
+        
+        &:hover {
+            background-color:$main-blue;
+            button {color:#FFF; }
+            &:before {
+                content:"\f0d7";
+                position: absolute;
+                left:50%;
+                top:40%;
+                transform: translateX(-50%);
+                color:$main-blue;
+                display: inline-block;
+                font: normal normal normal 5rem/1 FontAwesome;
+
+                @mixin atMedium {
+                    top:40%;
+                    font: normal normal normal 6rem/1 FontAwesome;
+                }
             }
         }
 
-        
-        @mixin atSmall{
-            margin-bottom:0;
-            float: left;
-            
-              &:hover {
-             background-color:$main-blue;
-             color:#FFF;
-             position: relative;
-             &:before {
-                content:"\f0d7";
-                position: absolute;
-                bottom:-4rem;
-                left:50%;
-                transform: translateX(-50%);
-                color:$main-blue;
-                display: inline-block;
-                font: normal normal normal 1.6rem/1 FontAwesome;
-                 font-size:5rem;
-                text-rendering: auto;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-            }
-        }
-            
-        }
-       
-      
-        @mixin atMedium {
-            padding:1.5rem;
-            font-size:1rem;
-        }
-        
-      
     }
-     
-     &:after{
-            content: "";
-              display: table;
-              clear: both;
-            }
-    }
+}
 
 
  @keyframes fadeEffect {
