@@ -42,7 +42,7 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -52,7 +52,7 @@
 
 	__webpack_require__(12);
 
-/***/ },
+/***/ }),
 /* 1 */,
 /* 2 */,
 /* 3 */,
@@ -63,7 +63,7 @@
 /* 8 */,
 /* 9 */,
 /* 10 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	'use strict';
 
@@ -921,9 +921,9 @@
 	  ;
 	})(window, document);
 
-/***/ },
+/***/ }),
 /* 11 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/*! picturefill - v3.0.2 - 2016-02-12
 	 * https://scottjehl.github.io/picturefill/
@@ -2471,9 +2471,9 @@
 	} )( window, document );
 
 
-/***/ },
+/***/ }),
 /* 12 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	(function(window, factory) {
 		var lazySizes = factory(window, window.document);
@@ -3167,5 +3167,5 @@
 	));
 
 
-/***/ }
+/***/ })
 /******/ ]);

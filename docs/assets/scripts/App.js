@@ -42,7 +42,7 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 
@@ -77,6 +77,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	//import SlideShow from "./modules/SlideShow";
+	//import Carousel from "./modules/Carousel";
 
 	var mobileMenu = new _MobileMenu2.default();
 
@@ -91,12 +92,13 @@
 	var modal = new _Modal2.default();
 	var tabContent = new _TabContent2.default();
 	var tab2Content = new _Tab2Content2.default();
+	//var carousel = new Carousel;
 
 	//var slideShow = new SlideShow();
 
-/***/ },
+/***/ }),
 /* 1 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 	 * jQuery JavaScript Library v2.2.4
@@ -9914,9 +9916,9 @@
 	}));
 
 
-/***/ },
+/***/ }),
 /* 2 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -9963,9 +9965,9 @@
 
 	exports.default = MobileMenu;
 
-/***/ },
+/***/ }),
 /* 3 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -10024,9 +10026,9 @@
 
 	exports.default = RevealOnScroll;
 
-/***/ },
+/***/ }),
 /* 4 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	/*!
 	Waypoints - 4.0.1
@@ -10787,9 +10789,9 @@
 	}())
 	;
 
-/***/ },
+/***/ }),
 /* 5 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -10821,7 +10823,7 @@
 
 	    this.lazyImages = (0, _jquery2.default)('.lazyload');
 	    this.siteHeader = (0, _jquery2.default)('.site-header');
-	    this.headerTriggerElement = (0, _jquery2.default)('.large-hero__title');
+	    this.headerTriggerElement = (0, _jquery2.default)('.carousel__title');
 	    this.createHeaderWaypoint();
 	    this.pageSections = (0, _jquery2.default)('.page-section');
 	    this.headerLinks = (0, _jquery2.default)('.primary-nav a');
@@ -10841,6 +10843,7 @@
 	    key: 'createHeaderWaypoint',
 	    value: function createHeaderWaypoint() {
 	      var that = this;
+
 	      new Waypoint({
 	        element: this.headerTriggerElement[0],
 	        handler: function handler(direction) {
@@ -10895,9 +10898,9 @@
 
 	exports.default = StickyHeader;
 
-/***/ },
+/***/ }),
 /* 6 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 	 * jQuery Smooth Scroll - v2.1.2 - 2017-01-19
@@ -11240,9 +11243,9 @@
 
 
 
-/***/ },
+/***/ }),
 /* 7 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -11310,9 +11313,9 @@
 
 	exports.default = Modal;
 
-/***/ },
+/***/ }),
 /* 8 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -11362,9 +11365,9 @@
 
 	exports.default = TabContent;
 
-/***/ },
+/***/ }),
 /* 9 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -11414,5 +11417,5 @@
 
 	exports.default = Tab2Content;
 
-/***/ }
+/***/ })
 /******/ ]);
