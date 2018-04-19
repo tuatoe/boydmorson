@@ -6,7 +6,7 @@ class StickyHeader {
   constructor(){
       this.lazyImages = $('.lazyload');
       this.siteHeader = $('.site-header');
-      this.headerTriggerElement = $('.carousel__title');
+      this.headerTriggerElement = $('.hero__title');
       this.createHeaderWaypoint();
       this.pageSections = $('.page-section');
       this.headerLinks = $('.primary-nav a');

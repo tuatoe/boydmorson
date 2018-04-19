@@ -68,7 +68,7 @@
   &__btn-container {
     @mixin atLarge {
         float:right;
-        margin-top:1.6rem;
+        margin-top:1rem;
     }
   }
 
@@ -79,7 +79,7 @@
     transform: translateX(-50%) scale(1.2);
     transition: transform .3s ease-out;
     transform-origin: 50% 0%;
-    background:#FFF;
+    background:$main-blue;
     padding:.5rem 1.2rem 0 1.2rem;
     border-radius: 0 0 .4rem .4rem;
     

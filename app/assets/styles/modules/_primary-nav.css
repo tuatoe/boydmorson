@@ -43,7 +43,7 @@
 
                     &.is-current-link {
                     color:$main-blue;
-                        border-bottom:6px solid $main-blue;
+                        border-bottom:6px solid $main-gold;
                         border-radius: 0;
 
                     }

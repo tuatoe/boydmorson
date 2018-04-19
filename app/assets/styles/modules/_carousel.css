@@ -1,13 +1,13 @@
 .carousel {
     width:100%;
-    height: 30rem;
+    height: 20rem;
     z-index: 0;
     h1 { font-size:2.5rem; margin:0; color:#FFF !important; }
     h2 { font-size:2rem; margin:0; color:#FFF !important; }
-    h3 { font-size: 1.5rem; margin:0; color:#FFF !important; }
+    h3 { font-s2ize: 1.5rem; margin:0; color:#FFF !important; }
     h4 { color:#FFF !important;}
     @mixin atMedium {
-        height: 40rem;
+        height: 30rem;
         h1 { font-size:3rem; margin:0; line-height: 1.625;}
         h2 { font-size:2.5rem; margin:0; line-height: 1.625; }
         h3 { font-size: 2rem; margin:0; line-height: 1.625;}
@@ -21,10 +21,10 @@
 }
 
 .carousel-inner .item {
-    height: 30rem;
+    height: 20rem;
     
     @mixin atMedium {
-        height: 40rem;
+        height: 30rem;
     }
     
      @mixin atLarge {
@@ -75,20 +75,7 @@
     }
 }
 
-.show-until-mobile { 
-    display: none;
 
-    @mixin atMedium {
-        display: block;
-    }
-}
-
-.show-until-large { 
-    display: block;
-    @mixin atMedium {
-        display: none;
-    } 
-}
 
 
 

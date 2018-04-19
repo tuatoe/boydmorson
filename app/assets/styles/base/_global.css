@@ -157,8 +157,10 @@ li{
 }
 
 
-.margin-top-15{
-    margin-top:15px;
+
+
+.margin-bottom-lg{
+    margin-bottom:4rem;
 }
 .hide-xs-small-screen {
     display: none;
@@ -233,3 +235,10 @@ li{
    float:left;
 }
 
+.mobile-margin-top-lg {
+    margin-top:0rem;
+   
+    @mixin atMedium{
+        margin-top:0 !important;
+    }
+}
